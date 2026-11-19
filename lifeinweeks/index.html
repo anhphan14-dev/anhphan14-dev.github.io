@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Life in Weeks – Your life, one week at a time</title>
+<meta name="description" content="Life in Weeks shows your whole life as a grid of weeks. Remember the weeks that matter, see time with loved ones, and make this week count.">
+<meta property="og:title" content="Life in Weeks">
+<meta property="og:description" content="Your whole life on one page. Make this week count.">
+<meta property="og:image" content="https://anhphan14-dev.github.io/lifeinweeks/img/feature-graphic.png">
+<link rel="icon" href="icon-512.png">
+<style>
+  :root {
+    --teal: #2a9d8f; --navy: #264653; --sun: #e9c46a;
+    --bg: #f6faf9; --fg: #1c2624; --muted: #52615e; --card: #ffffff; --line: #dbe5e3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111816; --fg: #e3ebe9; --muted: #9fb0ac; --card: #18211f; --line: #2a3633; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: var(--teal); }
+  .hero { background: linear-gradient(150deg, var(--teal), var(--navy)); color: #fff;
+          text-align: center; padding: 64px 16px 72px; }
+  .hero img { width: 112px; height: 112px; border-radius: 26px;
+              box-shadow: 0 10px 30px rgba(0,0,0,.25); }
+  .hero h1 { font-size: 2.4rem; margin: 20px 0 6px; line-height: 1.15; }
+  .hero p { margin: 0 auto; max-width: 520px; opacity: .9; font-size: 1.1rem; }
+  .btn { display: inline-block; margin-top: 28px; padding: 13px 26px; border-radius: 999px;
+         background: #fff; color: var(--navy); font-weight: 700; text-decoration: none; }
+  .btn:hover { background: var(--sun); }
+  main { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+              gap: 16px; margin: -36px 0 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+          padding: 20px; box-shadow: 0 4px 18px rgba(0,0,0,.05); }
+  .card .emoji { font-size: 28px; }
+  .card h3 { margin: 8px 0 4px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+  h2 { text-align: center; margin: 56px 0 20px; }
+  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 4px 16px;
+           scroll-snap-type: x mandatory; }
+  .shots img { height: 460px; width: auto; border-radius: 18px; scroll-snap-align: center;
+               flex: none; box-shadow: 0 6px 22px rgba(0,0,0,.15); }
+  @media (max-width: 480px) { .shots img { height: 380px; } .hero h1 { font-size: 2rem; } }
+  .note { text-align: center; color: var(--muted); max-width: 620px; margin: 40px auto 0; }
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 48px 16px 40px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="icon-512.png" alt="Life in Weeks icon">
+  <h1>Life in Weeks</h1>
+  <p>Your whole life fits on a single page. Every box is one week. Make this one count.</p>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.anhrice.lifeinweeks">Get it on Google Play</a>
+</header>
+
+<main>
+  <section class="features">
+    <div class="card"><div class="emoji">🟩</div><h3>Your life as a grid</h3>
+      <p>See every week you have lived and the ones ahead, colored by life stage.</p></div>
+    <div class="card"><div class="emoji">📝</div><h3>Remember what matters</h3>
+      <p>Add a note or a milestone to any week: graduations, trips, the day your child was born.</p></div>
+    <div class="card"><div class="emoji">❤️</div><h3>Time with loved ones</h3>
+      <p>See roughly how many visits you have left with the people you love. Then call them.</p></div>
+    <div class="card"><div class="emoji">🌕</div><h3>A gentle perspective</h3>
+      <p>Weekends, full moons, Sunday dinners. Not a countdown, but a reminder that small things are precious.</p></div>
+    <div class="card"><div class="emoji">📱</div><h3>Home-screen widget</h3>
+      <p>A quiet nudge showing which week of your life you are living right now.</p></div>
+    <div class="card"><div class="emoji">🔒</div><h3>Private by design</h3>
+      <p>Your notes stay on your phone. No account, no sign-up. Back up to a file whenever you like.</p></div>
+  </section>
+
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <img src="img/screen-01.png" alt="Your life as a grid of weeks" loading="lazy">
+    <img src="img/screen-02.png" alt="A note and milestone on a week" loading="lazy">
+    <img src="img/screen-03.png" alt="Visits left with loved ones" loading="lazy">
+    <img src="img/screen-04.png" alt="Weekends, full moons and more ahead" loading="lazy">
+    <img src="img/screen-05.png" alt="Home-screen widget" loading="lazy">
+  </div>
+
+  <p class="note">Inspired by the idea that a life of 80 years is about 4,000 weeks. Not to make you anxious, but to help you notice the ones you are living.</p>
+</main>
+
+<footer>
+  <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="mailto:tanh.naht@gmail.com">Contact</a></p>
+  <p>© 2026 anhrice</p>
+</footer>
+</body>
+</html>
