@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gravity UFO – Tap. Flip. Fly.</title>
+<meta name="description" content="Gravity UFO is a one-tap arcade game: flip gravity and steer your little UFO through endless asteroid gates.">
+<meta property="og:title" content="Gravity UFO">
+<meta property="og:description" content="Tap to flip gravity and fly your UFO through the asteroid belt.">
+<meta property="og:image" content="https://anhphan14-dev.github.io/gravityufo/img/feature-graphic.png">
+<link rel="icon" href="icon-512.png">
+<style>
+  :root {
+    --gold: #ffc93c; --orange: #ff9f43; --navy: #1b2440; --violet: #3b1f4f;
+    --bg: #f5f6fb; --fg: #1b2033; --muted: #555d78; --card: #ffffff; --line: #dde0ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #11152a; --fg: #e4e7f3; --muted: #9ca3c0; --card: #181d36; --line: #2a3050; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: #6b4fd1; }
+  @media (prefers-color-scheme: dark) { a { color: var(--gold); } }
+  .hero { background: linear-gradient(160deg, var(--navy), var(--violet)); color: #fff;
+          text-align: center; padding: 64px 16px 72px; }
+  .hero img { width: 112px; height: 112px; border-radius: 26px;
+              box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+  .hero h1 { font-size: 2.4rem; margin: 20px 0 6px; line-height: 1.15;
+             background: linear-gradient(var(--gold), var(--orange));
+             -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .hero p { margin: 0 auto; max-width: 520px; opacity: .9; font-size: 1.1rem; }
+  .btn { display: inline-block; margin-top: 28px; padding: 13px 26px; border-radius: 999px;
+         background: linear-gradient(135deg, var(--gold), var(--orange)); color: var(--navy);
+         font-weight: 800; text-decoration: none; }
+  .btn:hover { filter: brightness(1.08); }
+  main { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+              gap: 16px; margin: -36px 0 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+          padding: 20px; box-shadow: 0 4px 18px rgba(0,0,0,.06); }
+  .card .emoji { font-size: 28px; }
+  .card h3 { margin: 8px 0 4px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+  h2 { text-align: center; margin: 56px 0 20px; }
+  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 4px 16px;
+           scroll-snap-type: x mandatory; }
+  .shots img { height: 460px; width: auto; border-radius: 18px; scroll-snap-align: center;
+               flex: none; box-shadow: 0 6px 22px rgba(0,0,0,.18); }
+  @media (max-width: 480px) { .shots img { height: 380px; } .hero h1 { font-size: 2rem; } }
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 48px 16px 40px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="icon-512.png" alt="Gravity UFO icon">
+  <h1>Gravity UFO</h1>
+  <p>One tap flips gravity. Steer your little UFO through an endless asteroid belt and see how far you can fly.</p>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.anhrice.gravityufo">Get it on Google Play</a>
+</header>
+
+<main>
+  <section class="features">
+    <div class="card"><div class="emoji">🛸</div><h3>Tap to flip gravity</h3>
+      <p>One touch reverses gravity. Your UFO slows, rolls over and heads the other way.</p></div>
+    <div class="card"><div class="emoji">☄️</div><h3>Asteroid gates</h3>
+      <p>Thread the gaps between tumbling asteroid columns. They narrow, and later they move.</p></div>
+    <div class="card"><div class="emoji">⭐</div><h3>Stars and medals</h3>
+      <p>Grab stars for bonus points and earn Bronze, Silver, Gold and Platinum medals.</p></div>
+    <div class="card"><div class="emoji">🌌</div><h3>A sky that changes</h3>
+      <p>Fly from dusk into violet and deep night past a ringed planet and twinkling stars.</p></div>
+    <div class="card"><div class="emoji">📴</div><h3>Play anywhere</h3>
+      <p>No account, no sign-up. Your scores stay on your phone.</p></div>
+  </section>
+
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <img src="img/screen-01.png" alt="Main menu with the UFO" loading="lazy">
+    <img src="img/screen-02.png" alt="Flying towards a star between asteroid columns" loading="lazy">
+    <img src="img/screen-03.png" alt="The UFO rolling over after a gravity flip" loading="lazy">
+    <img src="img/screen-04.png" alt="Game over with a silver medal" loading="lazy">
+  </div>
+</main>
+
+<footer>
+  <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="mailto:tanh.naht@gmail.com">Contact</a></p>
+  <p>© 2026 anhrice</p>
+</footer>
+</body>
+</html>
