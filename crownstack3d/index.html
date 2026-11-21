@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crown Stack 3D – The Greedy King</title>
+<meta name="description" content="Crown Stack 3D: help greedy King Greedrick catch falling crowns and balance them all on his head. A 3D stacking and balance game for Android.">
+<meta property="og:title" content="Crown Stack 3D">
+<meta property="og:description" content="The greedy king wants EVERY crown. Catch them, stack them, don't let the tower fall!">
+<meta property="og:image" content="https://anhphan14-dev.github.io/crownstack3d/img/feature-graphic.png">
+<link rel="icon" href="icon-512.png">
+<style>
+  :root {
+    --gold: #ffc93c; --red: #c62842; --navy: #151b3d; --indigo: #2b3a7a;
+    --bg: #f5f6fb; --fg: #1b2033; --muted: #555d78; --card: #ffffff; --line: #dde0ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #11152a; --fg: #e4e7f3; --muted: #9ca3c0; --card: #181d36; --line: #2a3050; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: #3a5bd9; }
+  @media (prefers-color-scheme: dark) { a { color: var(--gold); } }
+  .hero { background: linear-gradient(170deg, var(--indigo), var(--navy)); color: #fff;
+          text-align: center; padding: 64px 16px 72px; }
+  .hero img { width: 112px; height: 112px; border-radius: 26px;
+              box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+  .hero h1 { font-size: 2.6rem; margin: 20px 0 6px; line-height: 1.1; color: var(--gold);
+             letter-spacing: .04em; font-weight: 900; }
+  .hero h1 span { background: var(--red); color: #fff; padding: 0 10px; border-radius: 6px;
+                  font-size: .7em; vertical-align: middle; }
+  .hero p { margin: 0 auto; max-width: 560px; opacity: .92; font-size: 1.1rem; }
+  .btn { display: inline-block; margin-top: 28px; padding: 13px 26px; border-radius: 999px;
+         background: var(--gold); color: var(--navy); font-weight: 800; text-decoration: none; }
+  .btn:hover { filter: brightness(1.08); }
+  main { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+              gap: 16px; margin: -36px 0 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+          padding: 20px; box-shadow: 0 4px 18px rgba(0,0,0,.06); }
+  .card .emoji { font-size: 28px; }
+  .card h3 { margin: 8px 0 4px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+  h2 { text-align: center; margin: 56px 0 20px; }
+  .story { max-width: 640px; margin: 0 auto; text-align: center; color: var(--muted); }
+  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 4px 16px;
+           scroll-snap-type: x mandatory; }
+  .shots img { height: 460px; width: auto; border-radius: 18px; scroll-snap-align: center;
+               flex: none; box-shadow: 0 6px 22px rgba(0,0,0,.18); }
+  @media (max-width: 480px) { .shots img { height: 380px; } .hero h1 { font-size: 2.2rem; } }
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 48px 16px 40px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="icon-512.png" alt="Crown Stack 3D icon">
+  <h1>CROWN STACK <span>3D</span></h1>
+  <p>King Greedrick wants every crown in the land, all on his own head. Catch the falling crowns, stack them sky-high and never let the tower fall!</p>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.anhrice.crownstack3d">Get it on Google Play</a>
+</header>
+
+<main>
+  <section class="features">
+    <div class="card"><div class="emoji">👑</div><h3>Catch every crown</h3>
+      <p>Slide the king in any direction, follow the crown’s shadow and catch it on his royal tray.</p></div>
+    <div class="card"><div class="emoji">🎯</div><h3>Aim for PERFECT</h3>
+      <p>Land a crown dead centre for bonus coins and a steadier tower. Chain perfects for big streaks.</p></div>
+    <div class="card"><div class="emoji">⚖️</div><h3>Real balance</h3>
+      <p>Off-centre catches and sudden moves make the tower lean. Lean too far and it all comes crashing down.</p></div>
+    <div class="card"><div class="emoji">🌙</div><h3>From castle to cosmos</h3>
+      <p>Climb past the clouds, through sunset and starry night into outer space. Watch out for iron crowns and wind.</p></div>
+    <div class="card"><div class="emoji">📜</div><h3>Royal Decrees</h3>
+      <p>Fulfil the king’s decrees for big coin rewards, then unlock crowns, trays and catch effects.</p></div>
+    <div class="card"><div class="emoji">📴</div><h3>Play anywhere</h3>
+      <p>No account, no sign-up, works offline. Your progress stays on your phone.</p></div>
+  </section>
+
+  <h2>The story</h2>
+  <p class="story">Once upon a time, King Greedrick ruled a tiny kingdom with a very, very big appetite… for crowns. One was not enough. Ten were not enough. Now crowns rain from the sky, and the king must balance them all on his royal head. A king never drops his crown!</p>
+
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <img src="img/screen-01.png" alt="Main menu with King Greedrick holding a stack of crowns" loading="lazy">
+    <img src="img/screen-02.png" alt="Catching a falling crown on the king's tray" loading="lazy">
+    <img src="img/screen-03.png" alt="A tall tower of crowns at sunset" loading="lazy">
+    <img src="img/screen-04.png" alt="A tower of 52 crowns in the starry night with wind" loading="lazy">
+    <img src="img/screen-05.png" alt="The Royal Shop with unlockable crowns" loading="lazy">
+    <img src="img/screen-06.png" alt="Royal Decrees with coin rewards" loading="lazy">
+  </div>
+</main>
+
+<footer>
+  <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="mailto:tanh.naht@gmail.com">Contact</a></p>
+  <p>© 2026 anhrice</p>
+</footer>
+</body>
+</html>
