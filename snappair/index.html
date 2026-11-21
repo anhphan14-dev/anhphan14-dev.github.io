@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snap Pair – Two cards. One match.</title>
+<meta name="description" content="Snap Pair is a fast visual reflex game: any two cards share exactly one symbol. Find it and tap it before the clock, the bot or your friend does.">
+<meta property="og:title" content="Snap Pair">
+<meta property="og:description" content="Two cards. One match. Be fast!">
+<meta property="og:image" content="https://anhphan14-dev.github.io/snappair/img/feature-graphic.png">
+<link rel="icon" href="icon-512.png">
+<style>
+  :root {
+    --gold: #ffc93c; --blue: #4fc3f7; --pink: #ff6b9a; --navy: #151b3d; --indigo: #26346e;
+    --bg: #f5f6fb; --fg: #1b2033; --muted: #555d78; --card: #ffffff; --line: #dde0ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #11152a; --fg: #e4e7f3; --muted: #9ca3c0; --card: #181d36; --line: #2a3050; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: #3a5bd9; }
+  @media (prefers-color-scheme: dark) { a { color: var(--gold); } }
+  .hero { background: linear-gradient(170deg, var(--indigo), var(--navy)); color: #fff;
+          text-align: center; padding: 64px 16px 72px; }
+  .hero img { width: 112px; height: 112px; border-radius: 26px;
+              box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+  .hero h1 { font-size: 2.6rem; margin: 20px 0 6px; line-height: 1.1; color: var(--gold);
+             letter-spacing: .04em; font-weight: 900; }
+  .hero p { margin: 0 auto; max-width: 540px; opacity: .92; font-size: 1.1rem; }
+  .btn { display: inline-block; margin-top: 28px; padding: 13px 26px; border-radius: 999px;
+         background: var(--gold); color: var(--navy); font-weight: 800; text-decoration: none; }
+  .btn:hover { filter: brightness(1.08); }
+  main { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+              gap: 16px; margin: -36px 0 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+          padding: 20px; box-shadow: 0 4px 18px rgba(0,0,0,.06); }
+  .card .emoji { font-size: 28px; }
+  .card h3 { margin: 8px 0 4px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+  h2 { text-align: center; margin: 56px 0 20px; }
+  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 4px 16px;
+           scroll-snap-type: x mandatory; }
+  .shots img { height: 460px; width: auto; border-radius: 18px; scroll-snap-align: center;
+               flex: none; box-shadow: 0 6px 22px rgba(0,0,0,.18); }
+  @media (max-width: 480px) { .shots img { height: 380px; } .hero h1 { font-size: 2.2rem; } }
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 48px 16px 40px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="icon-512.png" alt="Snap Pair icon">
+  <h1>SNAP PAIR</h1>
+  <p>Any two cards share exactly one symbol. Spot it, tap it, and be faster than the clock, the bot or your friends.</p>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.anhrice.snappair">Get it on Google Play</a>
+</header>
+
+<main>
+  <section class="features">
+    <div class="card"><div class="emoji">🔍</div><h3>Always exactly one match</h3>
+      <p>Every two cards in the deck share one symbol, never zero and never two. It’s maths, and it never fails.</p></div>
+    <div class="card"><div class="emoji">⏱️</div><h3>Time Attack and Deck Run</h3>
+      <p>Find as many pairs as you can in 60 seconds, or race through the whole deck. Combos add bonus time.</p></div>
+    <div class="card"><div class="emoji">🤖</div><h3>Beat the bot</h3>
+      <p>Race a computer opponent to 10 pairs. Easy, Normal and Hard bots react at different speeds.</p></div>
+    <div class="card"><div class="emoji">👥</div><h3>2 players, one phone</h3>
+      <p>Sit face to face with the phone between you. First to spot the match wins the card.</p></div>
+    <div class="card"><div class="emoji">🎚️</div><h3>Three difficulties</h3>
+      <p>4, 6 or 8 symbols per card, turned and sized differently to keep your eyes busy.</p></div>
+    <div class="card"><div class="emoji">📴</div><h3>Play anywhere</h3>
+      <p>No account, no sign-up, works offline. Your records stay on your phone.</p></div>
+  </section>
+
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <img src="img/screen-01.png" alt="Main menu with game modes and difficulty" loading="lazy">
+    <img src="img/screen-02.png" alt="Time Attack: the shared symbol lights up on both cards" loading="lazy">
+    <img src="img/screen-03.png" alt="Racing the bot" loading="lazy">
+    <img src="img/screen-04.png" alt="Two players on one phone" loading="lazy">
+  </div>
+</main>
+
+<footer>
+  <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="mailto:tanh.naht@gmail.com">Contact</a></p>
+  <p>© 2026 anhrice</p>
+</footer>
+</body>
+</html>
