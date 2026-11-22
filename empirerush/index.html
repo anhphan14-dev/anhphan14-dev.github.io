@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Empire Rush – Conquer the world. Offline.</title>
+<meta name="description" content="Empire Rush is an offline territory conquest game: lead your nation, draw border lines to claim land and outsmart clever AI empires. No internet needed.">
+<meta property="og:title" content="Empire Rush">
+<meta property="og:description" content="Conquer the world. Offline.">
+<meta property="og:image" content="https://anhphan14-dev.github.io/empirerush/icon-512.png">
+<link rel="icon" href="icon-512.png">
+<style>
+  :root {
+    --gold: #ffc93c; --green: #1e6b4f; --night: #0d2a21;
+    --bg: #f3f6f1; --fg: #15261f; --muted: #52665c; --card: #ffffff; --line: #dde6df;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0b1c16; --fg: #eaf3ee; --muted: #9cb5a8; --card: #13281f; --line: #23403a; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: #1e7a57; }
+  @media (prefers-color-scheme: dark) { a { color: var(--gold); } }
+  .hero { background: linear-gradient(170deg, var(--green), var(--night)); color: #fff;
+          text-align: center; padding: 64px 16px 72px; }
+  .hero img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+  .hero h1 { font-size: 2.6rem; margin: 20px 0 6px; line-height: 1.1; color: var(--gold); font-weight: 900; }
+  .hero p { margin: 0 auto; max-width: 560px; opacity: .92; font-size: 1.1rem; }
+  .btn { display: inline-block; margin-top: 28px; padding: 13px 26px; border-radius: 999px;
+         background: var(--gold); color: var(--night); font-weight: 800; text-decoration: none; }
+  .btn:hover { filter: brightness(1.08); }
+  main { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: -36px 0 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+          padding: 20px; box-shadow: 0 4px 18px rgba(0,0,0,.06); }
+  .card .emoji { font-size: 28px; }
+  .card h3 { margin: 8px 0 4px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+  h2 { text-align: center; margin: 56px 0 20px; }
+  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 4px 16px; scroll-snap-type: x mandatory; }
+  .shots img { height: 460px; width: auto; border-radius: 18px; scroll-snap-align: center;
+               flex: none; box-shadow: 0 6px 22px rgba(0,0,0,.18); }
+  @media (max-width: 480px) { .shots img { height: 380px; } .hero h1 { font-size: 2.2rem; } }
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 48px 16px 40px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="icon-512.png" alt="Empire Rush icon">
+  <h1>Empire Rush</h1>
+  <p>Conquer the world. Offline. Lead your nation, draw border lines to claim new land and outsmart clever rival empires.</p>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.anhrice.empirerush">Get it on Google Play</a>
+</header>
+
+<main>
+  <section class="features">
+    <div class="card"><div class="emoji">🚩</div><h3>Choose your nation</h3>
+      <p>24 nations with their own flags and colours. Start with 8, unlock the rest with coins won in battle.</p></div>
+    <div class="card"><div class="emoji">🧠</div><h3>Smart rival empires</h3>
+      <p>AI empires plan raids, retreat in time, hunt exposed lines and steal land. Four difficulty levels, up to 12 rivals.</p></div>
+    <div class="card"><div class="emoji">✂️</div><h3>Cut and conquer</h3>
+      <p>Leave your land, loop back home and everything inside becomes yours. Cut an enemy line to crush their empire.</p></div>
+    <div class="card"><div class="emoji">🗺️</div><h3>30-battle campaign</h3>
+      <p>From the Tribal Age to the Imperial Age: reach the land goal to win each battle and become Emperor of the World.</p></div>
+    <div class="card"><div class="emoji">♾️</div><h3>Endless conquest</h3>
+      <p>Grow from Tribe to World Empire and beat your best share of the map on every difficulty.</p></div>
+    <div class="card"><div class="emoji">✈️</div><h3>Fully offline</h3>
+      <p>No account and no internet needed to play. Perfect for flights, commutes and quick breaks.</p></div>
+  </section>
+
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <img src="img/screen-01.png" alt="Conquering land against rival empires" loading="lazy">
+    <img src="img/screen-02.png" alt="Campaign battle with a land goal" loading="lazy">
+    <img src="img/screen-03.png" alt="Main menu" loading="lazy">
+    <img src="img/screen-04.png" alt="Choosing a nation" loading="lazy">
+    <img src="img/screen-05.png" alt="Campaign map of 30 battles" loading="lazy">
+  </div>
+</main>
+
+<footer>
+  <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="mailto:tanh.naht@gmail.com">Contact</a></p>
+  <p>© 2026 anhrice</p>
+</footer>
+</body>
+</html>
