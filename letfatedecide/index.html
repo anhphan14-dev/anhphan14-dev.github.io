@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Let Fate Decide – Can't decide? Leave it to destiny.</title>
+<meta name="description" content="Let Fate Decide makes choices for you: spin a custom wheel, flip a coin, draw a card, pick this or that, find out what to eat, or ask whether you should buy it.">
+<meta property="og:title" content="Let Fate Decide">
+<meta property="og:description" content="Can't decide? Leave it to destiny.">
+<meta property="og:image" content="https://anhphan14-dev.github.io/letfatedecide/img/feature-graphic.png">
+<link rel="icon" href="icon-512.png">
+<style>
+  :root {
+    --gold: #ffc857; --pink: #ff6b9d; --violet: #2e1d66; --night: #110a2c;
+    --bg: #f6f4fb; --fg: #1d1638; --muted: #5c5478; --card: #ffffff; --line: #e1dcef;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #120c2b; --fg: #efeaff; --muted: #a99fcb; --card: #1d1540; --line: #2f2560; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: #6a3fd1; }
+  @media (prefers-color-scheme: dark) { a { color: var(--gold); } }
+  .hero { background: linear-gradient(170deg, var(--violet), var(--night)); color: #fff;
+          text-align: center; padding: 64px 16px 72px; }
+  .hero img { width: 112px; height: 112px; border-radius: 26px;
+              box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+  .hero h1 { font-size: 2.6rem; margin: 20px 0 6px; line-height: 1.1; color: var(--gold); font-weight: 900; }
+  .hero p { margin: 0 auto; max-width: 560px; opacity: .92; font-size: 1.1rem; }
+  .btn { display: inline-block; margin-top: 28px; padding: 13px 26px; border-radius: 999px;
+         background: var(--gold); color: var(--night); font-weight: 800; text-decoration: none; }
+  .btn:hover { filter: brightness(1.08); }
+  main { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+              gap: 16px; margin: -36px 0 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+          padding: 20px; box-shadow: 0 4px 18px rgba(0,0,0,.06); }
+  .card .emoji { font-size: 28px; }
+  .card h3 { margin: 8px 0 4px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+  h2 { text-align: center; margin: 56px 0 20px; }
+  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 4px 16px;
+           scroll-snap-type: x mandatory; }
+  .shots img { height: 460px; width: auto; border-radius: 18px; scroll-snap-align: center;
+               flex: none; box-shadow: 0 6px 22px rgba(0,0,0,.18); }
+  @media (max-width: 480px) { .shots img { height: 380px; } .hero h1 { font-size: 2.2rem; } }
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 48px 16px 40px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="icon-512.png" alt="Let Fate Decide icon">
+  <h1>Let Fate Decide</h1>
+  <p>Can't decide? Leave it to destiny. Spin a wheel, flip a coin, draw a card, and stop overthinking the small stuff.</p>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.anhrice.letfatedecide">Get it on Google Play</a>
+</header>
+
+<main>
+  <section class="features">
+    <div class="card"><div class="emoji">🎡</div><h3>Spin the Wheel</h3>
+      <p>Make your own wheels with up to 16 options and save them. Elimination mode keeps spinning until one is left.</p></div>
+    <div class="card"><div class="emoji">🪙</div><h3>Flip a Coin</h3>
+      <p>A real-feeling 3D toss. Name the sides whatever you like and keep track of the score.</p></div>
+    <div class="card"><div class="emoji">🃏</div><h3>Draw a Card</h3>
+      <p>Shuffle your options face down, follow your gut and turn one over.</p></div>
+    <div class="card"><div class="emoji">⚖️</div><h3>This or That</h3>
+      <p>Type two choices and watch fate go back and forth before it settles on one.</p></div>
+    <div class="card"><div class="emoji">🍜</div><h3>What to Eat?</h3>
+      <p>Over 60 dishes filtered by meal and style, plus your own favourite places.</p></div>
+    <div class="card"><div class="emoji">🛍️</div><h3>Should I Buy It?</h3>
+      <p>Answer a few honest questions. Fate only tips the close calls: buy it, wait 7 days, or skip it.</p></div>
+  </section>
+
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <img src="img/screen-01.png" alt="Home screen with the yes/no orb and six tools" loading="lazy">
+    <img src="img/screen-02.png" alt="Spinning a custom wheel" loading="lazy">
+    <img src="img/screen-03.png" alt="What to eat: fate picks a dish" loading="lazy">
+    <img src="img/screen-04.png" alt="Drawing a card" loading="lazy">
+    <img src="img/screen-05.png" alt="Should I buy it verdict" loading="lazy">
+  </div>
+</main>
+
+<footer>
+  <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="mailto:tanh.naht@gmail.com">Contact</a></p>
+  <p>© 2026 anhrice</p>
+</footer>
+</body>
+</html>
