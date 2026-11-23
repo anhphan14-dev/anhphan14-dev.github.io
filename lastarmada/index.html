@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Last Armada: Endworld – The fleets sail on</title>
-<meta name="description" content="Last Armada: Endworld is an offline fleet.io game on a post-apocalyptic sea: command your nation's fleet, collect energy, oxygen, food and water to grow your convoy and outsmart AI fleets. No internet needed.">
+<meta name="description" content="Last Armada: Endworld is an offline fleet.io game on a post-apocalyptic sea: command your nation's fleet, collect energy, oxygen, food and water to grow your convoy, complete daily orders and outsmart AI fleets. No internet needed.">
 <meta property="og:title" content="Last Armada: Endworld">
 <meta property="og:description" content="The world ended. The fleets sail on.">
 <meta property="og:image" content="https://anhphan14-dev.github.io/lastarmada/icon-512.png">
@@ -25,9 +25,9 @@
   .hero { background: linear-gradient(170deg, var(--sea), var(--night)); color: #fff;
           text-align: center; padding: 64px 16px 72px; }
   .hero img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 10px 30px rgba(0,0,0,.45); }
-  .hero .kicker { margin: 20px 0 0; color: var(--toxic); font-weight: 900; letter-spacing: .5em; }
+  .hero .kicker { margin: 20px auto 0; color: var(--toxic); font-weight: 900; letter-spacing: .5em; }
   .hero h1 { font-size: 2.8rem; margin: 0 0 6px; line-height: 1.1; font-weight: 900; letter-spacing: .06em; }
-  .hero .sub { color: var(--rust); font-weight: 900; letter-spacing: .5em; margin: 0 0 14px; }
+  .hero .sub { color: var(--rust); font-weight: 900; letter-spacing: .5em; margin: 0 auto 14px; }
   .hero p { margin: 0 auto; max-width: 560px; opacity: .92; font-size: 1.1rem; }
   .btn { display: inline-block; margin-top: 28px; padding: 13px 26px; border-radius: 999px;
          background: var(--rust); color: #2e1300; font-weight: 800; text-decoration: none; }
@@ -44,6 +44,13 @@
   .shots img { height: 460px; width: auto; border-radius: 18px; scroll-snap-align: center;
                flex: none; box-shadow: 0 6px 22px rgba(0,0,0,.18); }
   @media (max-width: 480px) { .shots img { height: 380px; } .hero h1 { font-size: 2.3rem; } }
+  .new { display: inline-block; margin: 0 0 16px; padding: 4px 12px; border-radius: 999px;
+         background: rgba(156,255,58,.14); border: 1px solid rgba(156,255,58,.5); color: var(--toxic);
+         font-size: .85rem; font-weight: 800; letter-spacing: .04em; }
+  .whatsnew { max-width: 640px; margin: 0 auto; }
+  .whatsnew h3 { margin: 0 0 8px; }
+  .whatsnew ul { margin: 0; padding-left: 1.2em; color: var(--muted); }
+  .whatsnew li { margin: 4px 0; }
   footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 48px 16px 40px; }
 </style>
 </head>
@@ -53,6 +60,7 @@
   <p class="kicker">LAST</p>
   <h1>ARMADA</h1>
   <p class="sub">ENDWORLD</p>
+  <p class="new">NEW IN 1.1: DAILY ORDERS · SOUNDTRACK</p>
   <p>The world ended. The fleets sail on. Command your nation's fleet, grow the longest convoy on a toxic sea and sink rival fleets, all offline.</p>
   <a class="btn" href="https://play.google.com/store/apps/details?id=com.anhrice.lastarmada">Get it on Google Play</a>
 </header>
@@ -69,15 +77,30 @@
       <p>Each fleet wears its flag's colours. Your home country is free; unlock the rest with salvage or by watching an ad.</p></div>
     <div class="card"><div class="emoji">🧠</div><h3>Smart AI fleets</h3>
       <p>Rivals hunt, dodge and race for wreckage. Four difficulty levels with up to 26 fleets at once.</p></div>
+    <div class="card"><div class="emoji">📋</div><h3>Daily orders</h3>
+      <p>Three new missions every day: sink fleets, haul water or oxygen, survive the fog. Earn salvage and a bonus crate.</p></div>
+    <div class="card"><div class="emoji">🎵</div><h3>Doomsday soundtrack</h3>
+      <p>A brooding harbor theme and pounding battle drums. Turn the music off on its own and keep the sound effects.</p></div>
     <div class="card"><div class="emoji">✈️</div><h3>Fully offline</h3>
       <p>No account and no internet needed to play. Shields, magnets, turbo crates and naval mines keep every run different.</p></div>
   </section>
+
+  <h2>What's new</h2>
+  <div class="card whatsnew">
+    <h3>Version 1.1</h3>
+    <ul>
+      <li><b>Daily Orders:</b> three new missions every day with salvage rewards and a bonus crate.</li>
+      <li><b>Soundtrack:</b> new music for the harbor and for battle, with its own on/off button.</li>
+      <li><b>Double Salvage:</b> watch an optional ad after a match to double your coins.</li>
+    </ul>
+  </div>
 
   <h2>Screenshots</h2>
   <div class="shots">
     <img src="img/screen-01.png" alt="A fleet collecting supplies" loading="lazy">
     <img src="img/screen-02.png" alt="Doomsday mode with the toxic fog" loading="lazy">
     <img src="img/screen-03.png" alt="Main menu" loading="lazy">
+    <img src="img/screen-06.png" alt="Daily orders" loading="lazy">
     <img src="img/screen-04.png" alt="Choosing a nation's fleet" loading="lazy">
     <img src="img/screen-05.png" alt="How to play" loading="lazy">
   </div>
