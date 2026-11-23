@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Last Armada – The fleets sail on</title>
+<meta name="description" content="Last Armada is an offline fleet.io game on a post-apocalyptic sea: command your nation's fleet, collect energy, oxygen, food and water to grow your convoy and outsmart AI fleets. No internet needed.">
+<meta property="og:title" content="Last Armada">
+<meta property="og:description" content="The world ended. The fleets sail on.">
+<meta property="og:image" content="https://anhphan14-dev.github.io/lastarmada/icon-512.png">
+<link rel="icon" href="icon-512.png">
+<style>
+  :root {
+    --toxic: #9cff3a; --rust: #ff8a3d; --sea: #22343a; --night: #0a1214;
+    --bg: #f2f5f4; --fg: #14201f; --muted: #50625f; --card: #ffffff; --line: #dbe3e1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0b1517; --fg: #eaf2f0; --muted: #9db3ae; --card: #142326; --line: #243a3d; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: #c25a12; }
+  @media (prefers-color-scheme: dark) { a { color: var(--rust); } }
+  .hero { background: linear-gradient(170deg, var(--sea), var(--night)); color: #fff;
+          text-align: center; padding: 64px 16px 72px; }
+  .hero img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 10px 30px rgba(0,0,0,.45); }
+  .hero .kicker { margin: 20px 0 0; color: var(--toxic); font-weight: 900; letter-spacing: .5em; }
+  .hero h1 { font-size: 2.8rem; margin: 0 0 6px; line-height: 1.1; font-weight: 900; letter-spacing: .06em; }
+  .hero p { margin: 0 auto; max-width: 560px; opacity: .92; font-size: 1.1rem; }
+  .btn { display: inline-block; margin-top: 28px; padding: 13px 26px; border-radius: 999px;
+         background: var(--rust); color: #2e1300; font-weight: 800; text-decoration: none; }
+  .btn:hover { filter: brightness(1.08); }
+  main { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: -36px 0 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+          padding: 20px; box-shadow: 0 4px 18px rgba(0,0,0,.06); }
+  .card .emoji { font-size: 28px; }
+  .card h3 { margin: 8px 0 4px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+  h2 { text-align: center; margin: 56px 0 20px; }
+  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 4px 16px; scroll-snap-type: x mandatory; }
+  .shots img { height: 460px; width: auto; border-radius: 18px; scroll-snap-align: center;
+               flex: none; box-shadow: 0 6px 22px rgba(0,0,0,.18); }
+  @media (max-width: 480px) { .shots img { height: 380px; } .hero h1 { font-size: 2.3rem; } }
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 48px 16px 40px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="icon-512.png" alt="Last Armada icon">
+  <p class="kicker">LAST</p>
+  <h1>ARMADA</h1>
+  <p>The world ended. The fleets sail on. Command your nation's fleet, grow the longest convoy on a toxic sea and sink rival fleets, all offline.</p>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.anhrice.lastarmada">Get it on Google Play</a>
+</header>
+
+<main>
+  <section class="features">
+    <div class="card"><div class="emoji">🚢</div><h3>Grow your convoy</h3>
+      <p>Collect energy, oxygen, food and water drifting on the sea. Every pickup adds to the convoy your flagship tows.</p></div>
+    <div class="card"><div class="emoji">💥</div><h3>Cut them off</h3>
+      <p>If a flagship hits another convoy, it sinks. Boost ahead of a rival, cut across its bow and claim its supplies.</p></div>
+    <div class="card"><div class="emoji">☢️</div><h3>Doomsday mode</h3>
+      <p>The toxic fog closes in every 35 seconds and nobody comes back. Be the last fleet afloat.</p></div>
+    <div class="card"><div class="emoji">🚩</div><h3>48 nations</h3>
+      <p>Each fleet wears its flag's colours. Your home country is free; unlock the rest with salvage or by watching an ad.</p></div>
+    <div class="card"><div class="emoji">🧠</div><h3>Smart AI fleets</h3>
+      <p>Rivals hunt, dodge and race for wreckage. Four difficulty levels with up to 26 fleets at once.</p></div>
+    <div class="card"><div class="emoji">✈️</div><h3>Fully offline</h3>
+      <p>No account and no internet needed to play. Shields, magnets, turbo crates and naval mines keep every run different.</p></div>
+  </section>
+
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <img src="img/screen-01.png" alt="A fleet collecting supplies" loading="lazy">
+    <img src="img/screen-02.png" alt="Doomsday mode with the toxic fog" loading="lazy">
+    <img src="img/screen-03.png" alt="Main menu" loading="lazy">
+    <img src="img/screen-04.png" alt="Choosing a nation's fleet" loading="lazy">
+    <img src="img/screen-05.png" alt="How to play" loading="lazy">
+  </div>
+</main>
+
+<footer>
+  <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="mailto:tanh.naht@gmail.com">Contact</a></p>
+  <p>© 2026 anhrice</p>
+</footer>
+</body>
+</html>
