@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>World War V: Tactical Grid – Match-3 warfare against 12 warlords</title>
+<meta name="description" content="World War V: Tactical Grid is an offline turn-based match-3 strategy game for Android: line up warheads, shields and quantum cores, fire superweapons and defeat the 12 warlords of 2145. No internet needed.">
+<meta property="og:title" content="World War V: Tactical Grid">
+<meta property="og:description" content="Match-3 warfare. 12 warlords. One world.">
+<meta property="og:image" content="https://anhphan14-dev.github.io/worldwarv/icon-512.png">
+<link rel="icon" href="icon-512.png">
+<style>
+  :root {
+    --hud: #2ee6c5; --amber: #ffb020; --night: #0a1016; --steel: #13222c;
+    --bg: #f1f5f7; --fg: #0e1a21; --muted: #4c606c; --card: #ffffff; --line: #d6e0e5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0a1016; --fg: #e8f1f5; --muted: #8aa3b0; --card: #111c24; --line: #24404f; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: #0b7d69; }
+  @media (prefers-color-scheme: dark) { a { color: var(--hud); } }
+  .hero { background: linear-gradient(170deg, var(--steel), var(--night)); color: #fff;
+          text-align: center; padding: 64px 16px 72px; }
+  .hero img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 10px 30px rgba(0,0,0,.5); }
+  .hero h1 { font-size: 2.8rem; margin: 20px 0 0; line-height: 1.05; font-weight: 900; letter-spacing: .08em; }
+  .hero h1 span { color: var(--amber); }
+  .hero .sub { color: var(--hud); font-weight: 900; letter-spacing: .45em; margin: 10px auto 14px; }
+  .hero p { margin: 0 auto; max-width: 560px; opacity: .92; font-size: 1.1rem; }
+  .btn { display: inline-block; margin-top: 28px; padding: 13px 26px; border-radius: 999px;
+         background: var(--hud); color: #032a24; font-weight: 800; text-decoration: none; }
+  .btn:hover { filter: brightness(1.08); }
+  main { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: -36px 0 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+          padding: 20px; box-shadow: 0 4px 18px rgba(0,0,0,.06); }
+  .card .emoji { font-size: 28px; }
+  .card h3 { margin: 8px 0 4px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+  h2 { text-align: center; margin: 56px 0 20px; }
+  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 4px 16px; scroll-snap-type: x mandatory; }
+  .shots img { height: 460px; width: auto; border-radius: 18px; scroll-snap-align: center;
+               flex: none; box-shadow: 0 6px 22px rgba(0,0,0,.2); }
+  @media (max-width: 480px) { .shots img { height: 380px; } .hero h1 { font-size: 2.2rem; } }
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 48px 16px 40px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="icon-512.png" alt="World War V icon">
+  <h1>WORLD WAR <span>V</span></h1>
+  <p class="sub">TACTICAL GRID</p>
+  <p>The year is 2145. Twelve warlords fight over the ruins of the Earth. Take command, swap modules on the Tactical Grid and out-think every enemy in turn-based match-3 battles, all offline.</p>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.anhrice.worldwarv">Get it on Google Play</a>
+</header>
+
+<main>
+  <section class="features">
+    <div class="card"><div class="emoji">🚀</div><h3>Match to fight</h3>
+      <p>Line up Warheads to strike, Nano-bots to repair, Plasma Shields to defend and Quantum Cores to charge your superweapons.</p></div>
+    <div class="card"><div class="emoji">⏱️</div><h3>Turn-based duels</h3>
+      <p>You and the enemy commander share one grid, 15 seconds per turn. Match 4 for an armour-piercing strike and an extra turn.</p></div>
+    <div class="card"><div class="emoji">💣</div><h3>System Overload</h3>
+      <p>Match 5 or a T / L shape to drop a bomb on the grid, and chain falling modules into massive combos.</p></div>
+    <div class="card"><div class="emoji">☢️</div><h3>12 superweapons</h3>
+      <p>Railgun, EMP Pulse, Cyber Virus, Orbital Laser, Nuclear Strike… capture each warlord’s capital to seize their weapon.</p></div>
+    <div class="card"><div class="emoji">🗺️</div><h3>36-mission campaign</h3>
+      <p>Fight across the Ash Wastes, the Frozen North and High Orbit to Ground Zero, then keep going in Endless War.</p></div>
+    <div class="card"><div class="emoji">🔧</div><h3>Upgrade and rise</h3>
+      <p>Spend black credits in the workshop on hull, firepower, armour and electronic warfare, and earn promotions with intel.</p></div>
+  </section>
+
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <img src="img/screen-01.png" alt="A match-3 battle on the Tactical Grid" loading="lazy">
+    <img src="img/screen-02.png" alt="Firing the Railgun superweapon" loading="lazy">
+    <img src="img/screen-03.png" alt="The war map with 12 warlords" loading="lazy">
+    <img src="img/screen-04.png" alt="Assaulting a faction capital" loading="lazy">
+    <img src="img/screen-05.png" alt="Victory screen" loading="lazy">
+  </div>
+</main>
+
+<footer>
+  <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="mailto:tanh.naht@gmail.com">Contact</a></p>
+  <p>World War V is a work of fiction: all factions and characters are invented.</p>
+  <p>© 2026 anhrice</p>
+</footer>
+</body>
+</html>
