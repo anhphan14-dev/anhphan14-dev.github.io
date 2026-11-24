@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cargo Sort: Harbor – Sort containers, load the ships</title>
+<meta name="description" content="Cargo Sort: Harbor is a relaxing offline sort puzzle for Android: stack shipping containers by colour, load cargo ships and sail through famous ports. No internet needed.">
+<meta property="og:title" content="Cargo Sort: Harbor">
+<meta property="og:description" content="Sort the containers by colour and load the ship.">
+<meta property="og:image" content="https://anhphan14-dev.github.io/cargosort/icon-512.png">
+<link rel="icon" href="icon-512.png">
+<style>
+  :root {
+    --gold: #ffc23d; --sea: #1c6c9b; --night: #0a1628;
+    --bg: #f2f6fa; --fg: #13233a; --muted: #56667c; --card: #ffffff; --line: #dbe4ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0a1628; --fg: #f1f5fa; --muted: #9db0c8; --card: #132743; --line: #34557f; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: #1a5f99; }
+  @media (prefers-color-scheme: dark) { a { color: var(--gold); } }
+  .hero { background: linear-gradient(175deg, #1b3a63, #f08a5d 58%, var(--sea) 58.5%, var(--night)); color: #fff;
+          text-align: center; padding: 64px 16px 72px; }
+  .hero img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 10px 30px rgba(0,0,0,.45); }
+  .hero h1 { font-size: 2.8rem; margin: 20px 0 0; line-height: 1.05; font-weight: 900; letter-spacing: .05em; }
+  .hero .sub { color: var(--gold); font-weight: 900; letter-spacing: .6em; margin: 10px auto 14px; }
+  .hero p { margin: 0 auto; max-width: 560px; opacity: .95; font-size: 1.1rem; }
+  .btn { display: inline-block; margin-top: 28px; padding: 13px 26px; border-radius: 999px;
+         background: var(--gold); color: #3a2700; font-weight: 800; text-decoration: none; }
+  .btn:hover { filter: brightness(1.08); }
+  main { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: -36px 0 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+          padding: 20px; box-shadow: 0 4px 18px rgba(0,0,0,.06); }
+  .card .emoji { font-size: 28px; }
+  .card h3 { margin: 8px 0 4px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+  h2 { text-align: center; margin: 56px 0 20px; }
+  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 4px 16px; scroll-snap-type: x mandatory; }
+  .shots img { height: 460px; width: auto; border-radius: 18px; scroll-snap-align: center;
+               flex: none; box-shadow: 0 6px 22px rgba(0,0,0,.18); }
+  @media (max-width: 480px) { .shots img { height: 380px; } .hero h1 { font-size: 2.3rem; } }
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 48px 16px 40px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="icon-512.png" alt="Cargo Sort icon">
+  <h1>CARGO SORT</h1>
+  <p class="sub">HARBOR</p>
+  <p>A calm, clever sort puzzle at the docks. Lift containers with the crane, stack four of a colour and watch them load onto the cargo ship. Sail from Hai Phong to Sydney, all offline.</p>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.anhrice.cargosort">Get it on Google Play</a>
+</header>
+
+<main>
+  <section class="features">
+    <div class="card"><div class="emoji">🏗️</div><h3>Tap, lift, drop</h3>
+      <p>Tap a stack to lift its top containers, tap another to drop them on the same colour or an empty spot.</p></div>
+    <div class="card"><div class="emoji">🚢</div><h3>Load the ship</h3>
+      <p>Four of one colour in a stack load straight onto the cargo ship. Fill every bay and the ship sails away.</p></div>
+    <div class="card"><div class="emoji">🌏</div><h3>15 famous ports</h3>
+      <p>Hai Phong, Singapore, Rotterdam, New York and more. Every 10 levels a new harbor and new sky.</p></div>
+    <div class="card"><div class="emoji">❓</div><h3>Covered cargo</h3>
+      <p>Later levels hide containers under tarps: you only see the colour once it reaches the top.</p></div>
+    <div class="card"><div class="emoji">📅</div><h3>Daily Cargo</h3>
+      <p>A fresh puzzle every day with bonus coins. Keep your daily streak going.</p></div>
+    <div class="card"><div class="emoji">✈️</div><h3>Fully offline</h3>
+      <p>No account, no timer and no internet needed. Undo, hints and an extra stack when you get stuck.</p></div>
+  </section>
+
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <img src="img/screen-01.png" alt="Lifting containers with the crane" loading="lazy">
+    <img src="img/screen-02.png" alt="Covered containers" loading="lazy">
+    <img src="img/screen-03.png" alt="A big yard with a hint" loading="lazy">
+    <img src="img/screen-04.png" alt="Ship loaded" loading="lazy">
+    <img src="img/screen-05.png" alt="Main menu" loading="lazy">
+  </div>
+</main>
+
+<footer>
+  <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="mailto:tanh.naht@gmail.com">Contact</a></p>
+  <p><a href="../">More games &amp; apps from anhrice</a></p>
+  <p>© 2026 anhrice</p>
+</footer>
+</body>
+</html>
