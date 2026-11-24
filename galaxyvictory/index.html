@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Galaxy Victory: Void Grid – Match-3 space battles from Earth to the galactic core</title>
+<meta name="description" content="Galaxy Victory: Void Grid is an offline turn-based match-3 space game for Android: fly the starship Discovery from Earth orbit to the black hole at the heart of the galaxy, line up warheads, deflectors and void cores, and defeat 12 alien species. No internet needed.">
+<meta property="og:title" content="Galaxy Victory: Void Grid">
+<meta property="og:description" content="Match-3 space battles. 24 worlds. One starship.">
+<meta property="og:image" content="https://anhphan14-dev.github.io/galaxyvictory/icon-512.png">
+<link rel="icon" href="icon-512.png">
+<style>
+  :root {
+    --hud: #2ee6c5; --amber: #ffb020; --night: #070a18; --deep: #241a50;
+    --bg: #f2f3fa; --fg: #0f1428; --muted: #4c5470; --card: #ffffff; --line: #d8dcef;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #070a18; --fg: #e8ecf8; --muted: #8f99b8; --card: #0f1428; --line: #2a3560; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: #0b7d69; }
+  @media (prefers-color-scheme: dark) { a { color: var(--hud); } }
+  .hero { color: #fff; text-align: center; padding: 64px 16px 72px;
+          background: radial-gradient(circle at 70% 20%, rgba(180,92,255,.35), transparent 45%),
+                      radial-gradient(circle at 20% 80%, rgba(46,230,197,.18), transparent 40%),
+                      linear-gradient(170deg, var(--deep), var(--night)); }
+  .hero img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 10px 30px rgba(0,0,0,.5); }
+  .hero h1 { font-size: 2.8rem; margin: 20px 0 0; line-height: 1.05; font-weight: 900; letter-spacing: .08em; }
+  .hero h1 span { color: var(--amber); }
+  .hero .sub { color: var(--hud); font-weight: 900; letter-spacing: .45em; margin: 10px auto 14px; }
+  .hero p { margin: 0 auto; max-width: 560px; opacity: .92; font-size: 1.1rem; }
+  .btn { display: inline-block; margin-top: 28px; padding: 13px 26px; border-radius: 999px;
+         background: var(--hud); color: #032a24; font-weight: 800; text-decoration: none; }
+  .btn:hover { filter: brightness(1.08); }
+  main { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: -36px 0 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+          padding: 20px; box-shadow: 0 4px 18px rgba(0,0,0,.06); }
+  .card .emoji { font-size: 28px; }
+  .card h3 { margin: 8px 0 4px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+  h2 { text-align: center; margin: 56px 0 20px; }
+  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 4px 16px; scroll-snap-type: x mandatory; }
+  .shots img { height: 460px; width: auto; border-radius: 18px; scroll-snap-align: center;
+               flex: none; box-shadow: 0 6px 22px rgba(0,0,0,.2); }
+  @media (max-width: 480px) { .shots img { height: 380px; } .hero h1 { font-size: 2.2rem; } }
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 48px 16px 40px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="icon-512.png" alt="Galaxy Victory icon">
+  <h1>GALAXY <span>VICTORY</span></h1>
+  <p class="sub">VOID GRID</p>
+  <p>The year is 2187. Twelve alien species have seized every world from Earth orbit to the edge of the galaxy. Fly the starship Discovery, outgun their saucers in turn-based match-3 battles and free 24 worlds, all offline.</p>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.anhrice.galaxyvictory">Get it on Google Play</a>
+</header>
+
+<main>
+  <section class="features">
+    <div class="card"><div class="emoji">🚀</div><h3>Match to fight</h3>
+      <p>Line up Warheads to strike, Nano-bots to repair, Deflectors to defend and Void Cores to charge your superweapons.</p></div>
+    <div class="card"><div class="emoji">🛸</div><h3>Discovery vs UFOs</h3>
+      <p>Your shuttle Discovery trades plasma fire with scout saucers, raiders and huge motherships across the grid.</p></div>
+    <div class="card"><div class="emoji">🪐</div><h3>24 worlds, one battle each</h3>
+      <p>Earth, the Moon, every planet of the Solar System, the Sun, then real exoplanets out to the black hole Sagittarius A*.</p></div>
+    <div class="card"><div class="emoji">☄️</div><h3>Every planet bends the rules</h3>
+      <p>Low gravity on the Moon, acid clouds on Venus, ion storms on Jupiter, solar flares at the Sun and crushing gravity at the core.</p></div>
+    <div class="card"><div class="emoji">💥</div><h3>12 superweapons</h3>
+      <p>Mass Driver, Meteor Storm, EMP Pulse, Ion Cannon, Supernova… destroy each species’ mothership to seize its weapon.</p></div>
+    <div class="card"><div class="emoji">🎖️</div><h3>Wings, daily ops, duels</h3>
+      <p>Pick one of 5 Earth wings, complete daily missions for a growing supply drop, or challenge a friend on the same phone.</p></div>
+  </section>
+
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <img src="img/screen-01.png" alt="A match-3 battle between Discovery and an alien mothership" loading="lazy">
+    <img src="img/screen-02.png" alt="Firing the Mass Driver superweapon" loading="lazy">
+    <img src="img/screen-03.png" alt="The star map from Earth to the galactic core" loading="lazy">
+    <img src="img/screen-04.png" alt="Choosing an Earth wing" loading="lazy">
+    <img src="img/screen-05.png" alt="Discovery leaving Earth in the story intro" loading="lazy">
+  </div>
+</main>
+
+<footer>
+  <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="mailto:tanh.naht@gmail.com">Contact</a></p>
+  <p>Galaxy Victory is a work of fiction: all alien species and characters are invented. Planet names are real; “Discovery” here is a fictional starship.</p>
+  <p><a href="../">More games &amp; apps from anhrice</a></p>
+  <p>© 2026 anhrice</p>
+</footer>
+</body>
+</html>
