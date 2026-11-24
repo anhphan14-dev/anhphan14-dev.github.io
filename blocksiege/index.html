@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Block Siege: Castle Crush – Fill rows, fire cannons, topple castles</title>
+<meta name="description" content="Block Siege: Castle Crush is an offline block puzzle for Android: fill rows and columns on an 8×8 board and every cleared line fires a cannonball at the enemy castle. No internet needed.">
+<meta property="og:title" content="Block Siege: Castle Crush">
+<meta property="og:description" content="Fill rows to fire cannons. Every line smashes a castle.">
+<meta property="og:image" content="https://anhphan14-dev.github.io/blocksiege/icon-512.png">
+<link rel="icon" href="icon-512.png">
+<style>
+  :root {
+    --gold: #ffc93c; --red: #e0453a; --dusk: #5b2a6e; --night: #151c2e;
+    --bg: #f5f3f8; --fg: #1d1a2a; --muted: #5e5870; --card: #ffffff; --line: #e2dcea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0e1322; --fg: #f2f4f8; --muted: #a3aec4; --card: #1b2338; --line: #3a4766; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: #b8361f; }
+  @media (prefers-color-scheme: dark) { a { color: var(--gold); } }
+  .hero { background: linear-gradient(170deg, #1b1840, var(--dusk) 55%, #e8673a); color: #fff;
+          text-align: center; padding: 64px 16px 72px; }
+  .hero img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 10px 30px rgba(0,0,0,.45); }
+  .hero h1 { font-size: 2.8rem; margin: 20px 0 0; line-height: 1.05; font-weight: 900; letter-spacing: .05em; }
+  .hero h1 span { color: var(--gold); display: block; }
+  .hero .sub { color: #ffd2c9; font-weight: 900; letter-spacing: .5em; margin: 10px auto 14px; }
+  .hero p { margin: 0 auto; max-width: 560px; opacity: .95; font-size: 1.1rem; }
+  .btn { display: inline-block; margin-top: 28px; padding: 13px 26px; border-radius: 999px;
+         background: var(--gold); color: #3a2a00; font-weight: 800; text-decoration: none; }
+  .btn:hover { filter: brightness(1.08); }
+  main { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: -36px 0 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+          padding: 20px; box-shadow: 0 4px 18px rgba(0,0,0,.06); }
+  .card .emoji { font-size: 28px; }
+  .card h3 { margin: 8px 0 4px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+  h2 { text-align: center; margin: 56px 0 20px; }
+  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 4px 16px; scroll-snap-type: x mandatory; }
+  .shots img { height: 460px; width: auto; border-radius: 18px; scroll-snap-align: center;
+               flex: none; box-shadow: 0 6px 22px rgba(0,0,0,.18); }
+  @media (max-width: 480px) { .shots img { height: 380px; } .hero h1 { font-size: 2.3rem; } }
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 48px 16px 40px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="icon-512.png" alt="Block Siege icon">
+  <h1>BLOCK <span>SIEGE</span></h1>
+  <p class="sub">CASTLE CRUSH</p>
+  <p>The classic block puzzle, now with cannons. Fill rows and columns on an 8×8 board: every line you clear fires a cannonball at the enemy castle. Crack it, burn it, topple it, all offline.</p>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.anhrice.blocksiege">Get it on Google Play</a>
+</header>
+
+<main>
+  <section class="features">
+    <div class="card"><div class="emoji">💥</div><h3>Every line is a cannon shot</h3>
+      <p>Each cleared row or column launches a cannonball. Clear several at once and chain combos to hit even harder.</p></div>
+    <div class="card"><div class="emoji">🏰</div><h3>Castles fight back</h3>
+      <p>The castle throws stones onto your board to block empty cells. The deeper you go, the more often they fall.</p></div>
+    <div class="card"><div class="emoji">👑</div><h3>Boss fortresses</h3>
+      <p>Every 5th castle is a boss with extra-thick walls and double gold. The sieges never end.</p></div>
+    <div class="card"><div class="emoji">💣</div><h3>Power-ups</h3>
+      <p>Spend gold on a BOMB to blast a 3×3 area, or NEW to swap your blocks when you get stuck.</p></div>
+    <div class="card"><div class="emoji">🧩</div><h3>Classic mode</h3>
+      <p>Prefer a pure block puzzle? Play the endless Classic mode and chase your best score.</p></div>
+    <div class="card"><div class="emoji">✈️</div><h3>Fully offline</h3>
+      <p>No account and no internet needed. Quick rounds for the bus, a coffee break or anywhere else.</p></div>
+  </section>
+
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <img src="img/screen-01.png" alt="Clearing a line fires a cannonball at the castle" loading="lazy">
+    <img src="img/screen-02.png" alt="A damaged castle later in the siege" loading="lazy">
+    <img src="img/screen-03.png" alt="A boss fortress" loading="lazy">
+    <img src="img/screen-04.png" alt="Victory screen" loading="lazy">
+    <img src="img/screen-05.png" alt="Endless Classic mode" loading="lazy">
+    <img src="img/screen-06.png" alt="Main menu" loading="lazy">
+  </div>
+</main>
+
+<footer>
+  <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="mailto:tanh.naht@gmail.com">Contact</a></p>
+  <p><a href="../">More games &amp; apps from anhrice</a></p>
+  <p>© 2026 anhrice</p>
+</footer>
+</body>
+</html>
