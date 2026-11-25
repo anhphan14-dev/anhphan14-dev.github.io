@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Life Dilemma: Trust or Betray – a life simulation about trust</title>
+<meta name="description" content="Life Dilemma is an offline life simulation for Android: answer five Y/N questions, become a personality like YYNYN, meet people through 12 stages of life and see how many points your choices earn.">
+<meta property="og:title" content="Life Dilemma: Trust or Betray">
+<meta property="og:description" content="Five Y/N answers. 32 personalities. One life. Trust or betray?">
+<meta property="og:image" content="https://anhphan14-dev.github.io/lifedilemma/icon-512.png">
+<link rel="icon" href="icon-512.png">
+<style>
+  :root {
+    --gold: #ffc93c; --yes: #34d17e; --no: #ff4d5e; --night: #140f2b;
+    --bg: #f5f3fb; --fg: #1c1733; --muted: #5d5878; --card: #ffffff; --line: #e0dcef;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #140f2b; --fg: #f4f1ff; --muted: #b4aacf; --card: #1e1740; --line: #4b3d86; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: #6a3fd0; }
+  @media (prefers-color-scheme: dark) { a { color: var(--gold); } }
+  .hero { background: linear-gradient(100deg, #0f7a46 0%, #24194a 48%, #24194a 52%, #a3172b 100%); color: #fff;
+          text-align: center; padding: 64px 16px 72px; }
+  .hero img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 10px 30px rgba(0,0,0,.45); }
+  .hero h1 { font-size: 2.8rem; margin: 20px 0 0; line-height: 1.05; font-weight: 900; letter-spacing: .05em; }
+  .hero .sub { font-weight: 900; letter-spacing: .4em; margin: 10px auto 14px; }
+  .hero .sub .y { color: var(--yes); } .hero .sub .n { color: var(--no); }
+  .hero p { margin: 0 auto; max-width: 580px; opacity: .95; font-size: 1.1rem; }
+  .btn { display: inline-block; margin-top: 28px; padding: 13px 26px; border-radius: 999px;
+         background: var(--gold); color: #3a2700; font-weight: 800; text-decoration: none; }
+  .btn:hover { filter: brightness(1.08); }
+  main { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: -36px 0 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+          padding: 20px; box-shadow: 0 4px 18px rgba(0,0,0,.06); }
+  .card .emoji { font-size: 28px; }
+  .card h3 { margin: 8px 0 4px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+  h2 { text-align: center; margin: 56px 0 20px; }
+  .rules { max-width: 520px; margin: 0 auto; border-collapse: collapse; width: 100%; }
+  .rules td, .rules th { padding: 8px 12px; border-bottom: 1px solid var(--line); text-align: center; }
+  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 4px 16px; scroll-snap-type: x mandatory; }
+  .shots img { height: 460px; width: auto; border-radius: 18px; scroll-snap-align: center;
+               flex: none; box-shadow: 0 6px 22px rgba(0,0,0,.18); }
+  @media (max-width: 480px) { .shots img { height: 380px; } .hero h1 { font-size: 2.3rem; } }
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 48px 16px 40px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="icon-512.png" alt="Life Dilemma icon">
+  <h1>LIFE DILEMMA</h1>
+  <p class="sub"><span class="y">TRUST</span> or <span class="n">BETRAY?</span></p>
+  <p>Answer five Y/N questions and you become a personality like <strong>YYNYN</strong>. Then live a whole life: meet people from childhood to old age and see how many points your choices really earn.</p>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.anhrice.lifedilemma">Get it on Google Play</a>
+</header>
+
+<main>
+  <section class="features">
+    <div class="card"><div class="emoji">🧬</div><h3>Five answers, one label</h3>
+      <p>First meeting? After they trust you? After they betray you? Twice in a row? Your Y/N answers become your label.</p></div>
+    <div class="card"><div class="emoji">🚶</div><h3>12 stages of life</h3>
+      <p>Childhood, schoolyard, the office, the market full of swindlers, politics, family, golden years... each with different people.</p></div>
+    <div class="card"><div class="emoji">⭐</div><h3>Beat the best possible</h3>
+      <p>After every stage, see how all 32 personalities would have scored with the very same people. Three stars if nobody beats you.</p></div>
+    <div class="card"><div class="emoji">🏘️</div><h3>Society simulation</h3>
+      <p>Watch a town evolve: each year the lowest scorers leave and the best are copied. Does kindness survive?</p></div>
+    <div class="card"><div class="emoji">🏆</div><h3>32 personalities</h3>
+      <p>Saint, Swindler, Mirror, Forgiver, Baiter, Contrarian... meet them all and run the grand tournament.</p></div>
+    <div class="card"><div class="emoji">🇻🇳</div><h3>English &amp; Tiếng Việt</h3>
+      <p>Play in English or Vietnamese, fully offline, no account needed.</p></div>
+  </section>
+
+  <h2>The scoring</h2>
+  <table class="rules">
+    <tr><th>You</th><th>Them</th><th>You get</th><th>They get</th></tr>
+    <tr><td>Y</td><td>Y</td><td>1</td><td>1</td></tr>
+    <tr><td>N</td><td>Y</td><td>2</td><td>0</td></tr>
+    <tr><td>Y</td><td>N</td><td>0</td><td>2</td></tr>
+    <tr><td>N</td><td>N</td><td>0</td><td>0</td></tr>
+  </table>
+
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <img src="img/screen-01.png" alt="Two people meeting: one trusts, one betrays" loading="lazy">
+    <img src="img/screen-02.png" alt="Your five Y/N choices" loading="lazy">
+    <img src="img/screen-03.png" alt="Society simulation" loading="lazy">
+    <img src="img/screen-04.png" alt="Stage results and ranking" loading="lazy">
+    <img src="img/screen-05.png" alt="Tournament of 32 personalities" loading="lazy">
+    <img src="img/screen-06.png" alt="Main menu" loading="lazy">
+  </div>
+</main>
+
+<footer>
+  <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="mailto:tanh.naht@gmail.com">Contact</a></p>
+  <p><a href="../">More games &amp; apps from anhrice</a></p>
+  <p>© 2026 anhrice</p>
+</footer>
+</body>
+</html>
