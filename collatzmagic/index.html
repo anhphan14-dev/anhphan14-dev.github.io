@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Collatz 3n+1: Number Magic</title>
+<meta name="description" content="Type any number and watch the Collatz 3n + 1 sequence fall to 1, with charts you can stack and compare. Plus Fibonacci, the golden ratio, perfect numbers, primes, math tricks and real-life math.">
+<meta property="og:title" content="Collatz 3n+1: Number Magic">
+<meta property="og:description" content="The simplest unsolved problem in mathematics, in your pocket.">
+<meta property="og:image" content="https://anhphan14-dev.github.io/collatzmagic/img/feature-graphic.png">
+<link rel="icon" href="icon-512.png">
+<style>
+  :root {
+    --gold: #ffc83d; --cyan: #4fd8ff; --violet: #2a1d6e; --night: #0b0a1c;
+    --bg: #f5f4fb; --fg: #1a1636; --muted: #5a5478; --card: #ffffff; --line: #e0dcef;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f0d24; --fg: #efeaff; --muted: #a8a0c8; --card: #1c1a38; --line: #2e2a58; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: #5a3fd1; }
+  @media (prefers-color-scheme: dark) { a { color: var(--gold); } }
+  .hero { background: linear-gradient(170deg, var(--violet), var(--night)); color: #fff;
+          text-align: center; padding: 64px 16px 72px; }
+  .hero img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+  .hero h1 { font-size: 2.6rem; margin: 20px 0 6px; line-height: 1.1; color: var(--gold); font-weight: 900; }
+  .hero p { margin: 0 auto; max-width: 580px; opacity: .92; font-size: 1.1rem; }
+  .rule { display: inline-flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; justify-content: center; }
+  .rule span { border-radius: 12px; padding: 8px 16px; font-weight: 800; }
+  .rule .even { background: rgba(79,216,255,.15); color: var(--cyan); border: 1px solid rgba(79,216,255,.5); }
+  .rule .odd { background: rgba(255,200,61,.15); color: var(--gold); border: 1px solid rgba(255,200,61,.5); }
+  .btn { display: inline-block; margin-top: 28px; padding: 13px 26px; border-radius: 999px;
+         background: var(--gold); color: var(--night); font-weight: 800; text-decoration: none; }
+  .btn:hover { filter: brightness(1.08); }
+  main { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: -36px 0 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+          padding: 20px; box-shadow: 0 4px 18px rgba(0,0,0,.06); }
+  .card .emoji { font-size: 28px; }
+  .card h3 { margin: 8px 0 4px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+  h2 { text-align: center; margin: 56px 0 20px; }
+  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 4px 16px; scroll-snap-type: x mandatory; }
+  .shots img { height: 460px; width: auto; border-radius: 18px; scroll-snap-align: center;
+               flex: none; box-shadow: 0 6px 22px rgba(0,0,0,.18); }
+  @media (max-width: 480px) { .shots img { height: 380px; } .hero h1 { font-size: 2.2rem; } }
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 48px 16px 40px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="icon-512.png" alt="Collatz Number Magic icon">
+  <h1>Collatz 3n+1: Number Magic</h1>
+  <p>The simplest unsolved problem in mathematics. Type any number, follow two tiny rules and watch it climb and crash back to 1.</p>
+  <div class="rule"><span class="even">If n is even: n ÷ 2</span><span class="odd">If n is odd: 3n + 1</span></div><br>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.anhrice.collatzmagic">Get it on Google Play</a>
+</header>
+
+<main>
+  <section class="features">
+    <div class="card"><div class="emoji">📈</div><h3>Stacked hailstone charts</h3>
+      <p>Every number you run is drawn on top of the others, in its own colour, until you clear it. Tap or drag to read every path at any step; switch to log scale for giants.</p></div>
+    <div class="card"><div class="emoji">🔢</div><h3>Any size, every step</h3>
+      <p>Numbers up to 40 digits. See steps to 1, the peak, odd and even moves, and each step explained.</p></div>
+    <div class="card"><div class="emoji">🌻</div><h3>Magic of Numbers</h3>
+      <p>Fibonacci and the golden spiral, the golden ratio, perfect numbers, primes, Kaprekar's 6174, π with darts, 142857 and more.</p></div>
+    <div class="card"><div class="emoji">🎩</div><h3>Math Tricks</h3>
+      <p>The 1089 mind reader, multiply by 11 in a flash, square numbers ending in 5, the 9 times table on your fingers, casting out nines…</p></div>
+    <div class="card"><div class="emoji">🌍</div><h3>Math in Real Life</h3>
+      <p>Compound interest and the rule of 72, the birthday paradox, folding paper to the Moon, discounts, unit prices, Benford's law and RSA codes.</p></div>
+    <div class="card"><div class="emoji">✈️</div><h3>Offline, no account</h3>
+      <p>Everything runs on your phone. Your chart is saved on the device only.</p></div>
+  </section>
+
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <img src="img/screen-01.png" alt="Collatz rules, input and result" loading="lazy">
+    <img src="img/screen-02.png" alt="Five sequences stacked on one chart with a crosshair" loading="lazy">
+    <img src="img/screen-03.png" alt="Log scale chart of record-breaking numbers" loading="lazy">
+    <img src="img/screen-04.png" alt="Magic of Numbers topics" loading="lazy">
+    <img src="img/screen-05.png" alt="Fibonacci golden spiral" loading="lazy">
+    <img src="img/screen-06.png" alt="The 1089 mind reading trick" loading="lazy">
+    <img src="img/screen-07.png" alt="The birthday paradox" loading="lazy">
+  </div>
+</main>
+
+<footer>
+  <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="mailto:tanh.naht@gmail.com">Contact</a></p>
+  <p><a href="../">More games &amp; apps from anhrice</a></p>
+  <p>© 2026 anhrice</p>
+</footer>
+</body>
+</html>
