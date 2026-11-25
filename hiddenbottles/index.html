@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hidden Bottles: Color Match</title>
+<meta name="description" content="A colourful logic puzzle for kids and grown-ups: swap the bottles, count how many are in the right place, and uncover the secret order behind the velvet curtain.">
+<meta property="og:title" content="Hidden Bottles: Color Match">
+<meta property="og:description" content="Swap. Count. Reveal the secret order.">
+<meta property="og:image" content="https://anhphan14-dev.github.io/hiddenbottles/img/feature-graphic.png">
+<link rel="icon" href="icon-512.png">
+<style>
+  :root {
+    --gold: #f5c76b; --gold-light: #ffe8b0; --plum: #3a1478; --night: #12052c;
+    --bg: #f7f3fd; --fg: #1d0f3a; --muted: #5d4f7c; --card: #ffffff; --line: #e3dbf2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #160832; --fg: #fff8ec; --muted: #c9b8ec; --card: #2b1260; --line: #3e2380; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: #6a2fd1; }
+  @media (prefers-color-scheme: dark) { a { color: var(--gold); } }
+  .hero { background: radial-gradient(circle at 50% 30%, #8a2be2, var(--plum) 55%, var(--night)); color: #fff;
+          text-align: center; padding: 64px 16px 72px; }
+  .hero img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+  .hero h1 { font-size: 2.6rem; margin: 20px 0 6px; line-height: 1.1; color: var(--gold-light); font-weight: 900; }
+  .hero p { margin: 0 auto; max-width: 560px; opacity: .92; font-size: 1.1rem; }
+  .btn { display: inline-block; margin-top: 28px; padding: 13px 26px; border-radius: 999px;
+         background: var(--gold); color: #2a1500; font-weight: 800; text-decoration: none; }
+  .btn:hover { filter: brightness(1.08); }
+  main { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: -36px 0 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+          padding: 20px; box-shadow: 0 4px 18px rgba(0,0,0,.08); }
+  .card .emoji { font-size: 28px; }
+  .card h3 { margin: 8px 0 4px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+  h2 { text-align: center; margin: 56px 0 20px; }
+  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 4px 16px; scroll-snap-type: x mandatory; }
+  .shots img { height: 460px; width: auto; border-radius: 18px; scroll-snap-align: center;
+               flex: none; box-shadow: 0 6px 22px rgba(0,0,0,.2); }
+  @media (max-width: 480px) { .shots img { height: 380px; } .hero h1 { font-size: 2.2rem; } }
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 48px 16px 40px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="icon-512.png" alt="Hidden Bottles icon">
+  <h1>Hidden Bottles: Color Match</h1>
+  <p>Behind the velvet curtain, the bottles stand in a secret order. Swap yours, count how many are right, and reveal the mystery.</p>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.anhrice.hiddenbottles">Get it on Google Play</a>
+</header>
+
+<main>
+  <section class="features">
+    <div class="card"><div class="emoji">🧪</div><h3>Swap and count</h3>
+      <p>Tap or drag to swap two bottles. After each swap you learn how many are in the right place, but not which ones.</p></div>
+    <div class="card"><div class="emoji">🏰</div><h3>4 rooms, 180 levels</h3>
+      <p>Little Lab (4 bottles), Potion Shop (6), Grand Cellar (8), and the Royal Vault with 10 bottles for masters.</p></div>
+    <div class="card"><div class="emoji">📒</div><h3>Notebook and pins</h3>
+      <p>Every try is written in your notebook. Hold a bottle to pin it when you are sure.</p></div>
+    <div class="card"><div class="emoji">☀️</div><h3>Daily Challenge</h3>
+      <p>A new 7-bottle puzzle every day, the same for everyone. Keep your streak alive for bonus coins.</p></div>
+    <div class="card"><div class="emoji">✨</div><h3>Bottle Shop</h3>
+      <p>Spend coins on potion flasks, classic bottles, lab tubes and crystal perfume bottles.</p></div>
+    <div class="card"><div class="emoji">👨‍👩‍👧</div><h3>For everyone</h3>
+      <p>Bright colours with symbols on every bottle, so colour-blind players can play too. Works offline.</p></div>
+  </section>
+
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <img src="img/screen-01.png" alt="Home screen" loading="lazy">
+    <img src="img/screen-02.png" alt="Playing a 6-bottle level with the notebook" loading="lazy">
+    <img src="img/screen-03.png" alt="The secret order revealed" loading="lazy">
+    <img src="img/screen-04.png" alt="Level complete with three stars" loading="lazy">
+    <img src="img/screen-05.png" alt="Choose a room: Easy, Medium, Hard, Master" loading="lazy">
+    <img src="img/screen-06.png" alt="Bottle shop" loading="lazy">
+    <img src="img/screen-07.png" alt="Daily challenge with perfume bottles" loading="lazy">
+  </div>
+</main>
+
+<footer>
+  <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="mailto:tanh.naht@gmail.com">Contact</a></p>
+  <p><a href="../">More games &amp; apps from anhrice</a></p>
+  <p>© 2026 anhrice</p>
+</footer>
+</body>
+</html>
