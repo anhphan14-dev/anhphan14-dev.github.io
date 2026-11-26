@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Element Kings: Match Battle</title>
+<meta name="description" content="Match water, fire, metal, wood, earth and magic to summon chess armies. Pawns, Rooks, exploding Knights and Queens march to topple the enemy King. 30 battles, offline.">
+<meta property="og:title" content="Element Kings: Match Battle">
+<meta property="og:description" content="Match elements. Summon chess armies. Topple the King!">
+<meta property="og:image" content="https://anhphan14-dev.github.io/elementkings/img/feature-graphic.png">
+<link rel="icon" href="icon-512.png">
+<style>
+  :root { --gold: #ffc93c; --gold-light: #fff4c8; --accent: #5a3ee0; --night: #0c1440;
+    --bg: #f6f7ff; --fg: #141a3d; --muted: #4f5a7a; --card: #ffffff; --line: #e0e3f5; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0b1030; --fg: #f3f1ff; --muted: #a9b0d6; --card: #17204a; --line: #26306a; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: var(--accent); }
+  @media (prefers-color-scheme: dark) { a { color: var(--gold); } }
+  .hero { background: radial-gradient(circle at 50% 30%, #7a4cf0, #2a2a9a 50%, var(--night)); color: #fff; text-align: center; padding: 64px 16px 72px; }
+  .hero img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+  .hero h1 { font-size: 2.6rem; margin: 20px 0 6px; line-height: 1.1; color: var(--gold-light); font-weight: 900; }
+  .hero p { margin: 0 auto; max-width: 560px; opacity: .92; font-size: 1.1rem; }
+  .btn { display: inline-block; margin-top: 28px; padding: 13px 26px; border-radius: 999px; background: var(--gold); color: #3a1a00; font-weight: 800; text-decoration: none; }
+  main { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: -36px 0 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px; box-shadow: 0 4px 18px rgba(0,0,0,.08); }
+  .card .emoji { font-size: 28px; }
+  .card h3 { margin: 8px 0 4px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+  h2 { text-align: center; margin: 56px 0 20px; }
+  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 4px 16px; scroll-snap-type: x mandatory; }
+  .shots img { height: 460px; width: auto; border-radius: 18px; scroll-snap-align: center; flex: none; box-shadow: 0 6px 22px rgba(0,0,0,.2); }
+  @media (max-width: 480px) { .shots img { height: 380px; } .hero h1 { font-size: 2.2rem; } }
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 48px 16px 40px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="icon-512.png" alt="Element Kings icon">
+  <h1>Element Kings: Match Battle</h1>
+  <p>Two Kings, two armies, one road. Match elements to summon chess soldiers and send them marching to topple the enemy King before your own tower falls!</p>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.anhrice.elementkings">Get it on Google Play</a>
+</header>
+<main>
+  <section class="features">
+    <div class="card"><div class="emoji">💧</div><h3>Six elements</h3>
+      <p>Water, fire, metal, wood, earth and magic fill your board. Every match summons a soldier of that element.</p></div>
+    <div class="card"><div class="emoji">♟️</div><h3>A chess army</h3>
+      <p>Match 3 for a Pawn, 4 for a sturdy Rook, an L or T for a Knight that explodes on contact, 5 for a mighty Queen.</p></div>
+    <div class="card"><div class="emoji">🔥</div><h3>Elements counter each other</h3>
+      <p>Water beats Fire, Fire beats Metal, Metal beats Wood, Wood beats Earth, Earth beats Water. Strong hits deal 60% more.</p></div>
+    <div class="card"><div class="emoji">👑</div><h3>Real-time battles</h3>
+      <p>The enemy King plays its own board at the same time. Both Kings shoot, but weakly: your army does the work.</p></div>
+    <div class="card"><div class="emoji">🗺️</div><h3>30 battles, 6 realms</h3>
+      <p>From Earth Valley to the Magic Castle. Each realm favours its element, so pick the right counters.</p></div>
+    <div class="card"><div class="emoji">⬆️</div><h3>Upgrade and play offline</h3>
+      <p>Earn coins and stars, upgrade every piece and your King. Cute art for kids and grown-ups, no internet needed.</p></div>
+  </section>
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <img src="img/screen-01.png" alt="Battle in the Fire Volcano" loading="lazy">
+    <img src="img/screen-02.png" alt="Map of six realms and 30 levels" loading="lazy">
+    <img src="img/screen-03.png" alt="Battle in the Metal Peaks" loading="lazy">
+    <img src="img/screen-04.png" alt="Battle on the Water Isles" loading="lazy">
+    <img src="img/screen-05.png" alt="Army upgrades" loading="lazy">
+    <img src="img/screen-06.png" alt="Battle at the Magic Castle" loading="lazy">
+    <img src="img/screen-07.png" alt="How to play" loading="lazy">
+  </div>
+</main>
+<footer>
+  <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="mailto:tanh.naht@gmail.com">Contact</a></p>
+  <p><a href="../">More games &amp; apps from anhrice</a></p>
+  <p>© 2026 anhrice</p>
+</footer>
+</body>
+</html>
