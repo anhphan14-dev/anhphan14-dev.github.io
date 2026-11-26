@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lightbound: Dark Maze</title>
+<meta name="description" content="Escape pitch-black mazes with a tiny light. Find keys, dodge monsters that hide in the dark, and remember the way out. 60 mazes in 5 chapters, a Daily Maze, offline.">
+<meta property="og:title" content="Lightbound: Dark Maze">
+<meta property="og:description" content="How far can your little light take you?">
+<meta property="og:image" content="https://anhphan14-dev.github.io/lightbound/img/feature-graphic.png">
+<link rel="icon" href="icon-512.png">
+<style>
+  :root { --gold: #ffc35a; --gold-light: #fff4c8; --accent: #6b4ce0; --night: #05040c;
+    --bg: #f6f5ff; --fg: #15122c; --muted: #565078; --card: #ffffff; --line: #e2dff5; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0a0916; --fg: #f3f1ff; --muted: #a7a3c8; --card: #17152e; --line: #2a2652; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: var(--accent); }
+  @media (prefers-color-scheme: dark) { a { color: var(--gold); } }
+  .hero { background: radial-gradient(circle at 50% 28%, #6a4a1a, #241a3a 38%, var(--night) 75%); color: #fff; text-align: center; padding: 64px 16px 72px; }
+  .hero img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 0 40px rgba(255,180,70,.45); }
+  .hero h1 { font-size: 2.6rem; margin: 20px 0 6px; line-height: 1.1; color: var(--gold-light); font-weight: 900; text-shadow: 0 0 22px rgba(255,180,70,.6); }
+  .hero p { margin: 0 auto; max-width: 560px; opacity: .92; font-size: 1.1rem; }
+  .btn { display: inline-block; margin-top: 28px; padding: 13px 26px; border-radius: 999px; background: var(--gold); color: #3a1a00; font-weight: 800; text-decoration: none; }
+  main { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: -36px 0 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px; box-shadow: 0 4px 18px rgba(0,0,0,.08); }
+  .card .emoji { font-size: 28px; }
+  .card h3 { margin: 8px 0 4px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+  h2 { text-align: center; margin: 56px 0 20px; }
+  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 4px 16px; scroll-snap-type: x mandatory; }
+  .shots img { height: 460px; width: auto; border-radius: 18px; scroll-snap-align: center; flex: none; box-shadow: 0 6px 22px rgba(0,0,0,.2); }
+  @media (max-width: 480px) { .shots img { height: 380px; } .hero h1 { font-size: 2.2rem; } }
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 48px 16px 40px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="icon-512.png" alt="Lightbound icon">
+  <h1>Lightbound: Dark Maze</h1>
+  <p>The maze is pitch black. All you have is Lumi, a little spirit of light. Find the keys, unlock the door and escape before whatever hides in the dark finds you.</p>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.anhrice.lightbound">Get it on Google Play</a>
+</header>
+<main>
+  <section class="features">
+    <div class="card"><div class="emoji">🕯️</div><h3>Your light moves with you</h3>
+      <p>You only see a few steps around you. The paths you walk stay on your map, so explore smart.</p></div>
+    <div class="card"><div class="emoji">🔦</div><h3>Flashlight and batteries</h3>
+      <p>Shine far down a corridor, but the battery drains fast. Grab spares before the dark wins.</p></div>
+    <div class="card"><div class="emoji">🧠</div><h3>Memory maze</h3>
+      <p>In the Fading Woods the map fades behind you. Remember the way, or light braziers to keep an area bright.</p></div>
+    <div class="card"><div class="emoji">👀</div><h3>Monsters in the dark</h3>
+      <p>Wisps drift, Hunters chase whoever they catch in the beam, Shades creep closer when you look away. A red glow and your heartbeat warn you.</p></div>
+    <div class="card"><div class="emoji">🏮</div><h3>Light sources</h3>
+      <p>Collect lanterns to grow your light. In the Abyss you can only see the tiles right next to you.</p></div>
+    <div class="card"><div class="emoji">📅</div><h3>60 mazes and a Daily Maze</h3>
+      <p>5 chapters, 3 stars per maze, a fresh maze every day, 6 lantern colours. Swipe or D-pad, plays offline.</p></div>
+  </section>
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <img src="img/screen-01.png" alt="A wisp in the Candle Halls" loading="lazy">
+    <img src="img/screen-02.png" alt="Flashlight beam revealing a hunter" loading="lazy">
+    <img src="img/screen-03.png" alt="Main menu with chapters" loading="lazy">
+    <img src="img/screen-04.png" alt="A lit brazier in the Fading Woods" loading="lazy">
+    <img src="img/screen-05.png" alt="A shade frozen in the light" loading="lazy">
+    <img src="img/screen-06.png" alt="One-step vision in the Abyss" loading="lazy">
+    <img src="img/screen-07.png" alt="Escaped with three stars" loading="lazy">
+    <img src="img/screen-08.png" alt="Lantern shop" loading="lazy">
+  </div>
+</main>
+<footer>
+  <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="mailto:tanh.naht@gmail.com">Contact</a></p>
+  <p><a href="../">More games &amp; apps from anhrice</a></p>
+  <p>© 2026 anhrice</p>
+</footer>
+</body>
+</html>
