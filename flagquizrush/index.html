@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flag Quiz Rush: World Flags</title>
+<meta name="description" content="Guess the flags and capitals of all 195 countries. World Tour, Time Rush, Survival, Capitals and a Daily Quiz. Collect every flag in your Atlas. Offline.">
+<meta property="og:title" content="Flag Quiz Rush: World Flags">
+<meta property="og:description" content="195 flags. How many do you know?">
+<meta property="og:image" content="https://anhphan14-dev.github.io/flagquizrush/img/feature-graphic.png"><link rel="icon" href="icon-512.png">
+<style>
+  :root { --gold: #ffc35a; --gold-light: #ffffff; --accent: #1e6fe0; --night: #051a44;
+    --bg: #f6f5ff; --fg: #15122c; --muted: #565078; --card: #ffffff; --line: #e2dff5; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0a0916; --fg: #f3f1ff; --muted: #a7a3c8; --card: #17152e; --line: #2a2652; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: var(--accent); }
+  @media (prefers-color-scheme: dark) { a { color: var(--gold); } }
+  .hero { background: radial-gradient(circle at 50% 28%, #2e8bff, #0b3d91 45%, var(--night) 85%); color: #fff; text-align: center; padding: 64px 16px 72px; }
+  .hero img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 0 40px rgba(80,160,255,.6); }
+  .hero h1 { font-size: 2.6rem; margin: 20px 0 6px; line-height: 1.1; color: var(--gold-light); font-weight: 900; text-shadow: 0 0 22px rgba(0,40,120,.8); }
+  .hero p { margin: 0 auto; max-width: 560px; opacity: .92; font-size: 1.1rem; }
+  .btn { display: inline-block; margin-top: 28px; padding: 13px 26px; border-radius: 999px; background: var(--gold); color: #3a1a00; font-weight: 800; text-decoration: none; }
+  main { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: -36px 0 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px; box-shadow: 0 4px 18px rgba(0,0,0,.08); }
+  .card .emoji { font-size: 28px; }
+  .card h3 { margin: 8px 0 4px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+  h2 { text-align: center; margin: 56px 0 20px; }
+  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 4px 16px; scroll-snap-type: x mandatory; }
+  .shots img { height: 460px; width: auto; border-radius: 18px; scroll-snap-align: center; flex: none; box-shadow: 0 6px 22px rgba(0,0,0,.2); }
+  @media (max-width: 480px) { .shots img { height: 380px; } .hero h1 { font-size: 2.2rem; } }
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 48px 16px 40px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="icon-512.png" alt="Flag Quiz Rush icon">
+  <h1>Flag Quiz Rush: World Flags</h1>
+  <p>195 countries, 195 flags. How many do you know? Travel the world continent by continent, race the clock and collect every flag in your Atlas.</p>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.anhrice.flagquizrush">Get it on Google Play</a>
+</header>
+<main>
+  <section class="features">
+    <div class="card"><div class="emoji">🌍</div><h3>World Tour</h3>
+      <p>24 stops across 6 continents, from famous flags to the trickiest island nations. 3 stars per stop.</p></div>
+    <div class="card"><div class="emoji">⏱️</div><h3>Time Rush</h3>
+      <p>60 seconds. Every 5 in a row adds time, every mistake costs some. Beat your best score.</p></div>
+    <div class="card"><div class="emoji">❤️</div><h3>Survival</h3>
+      <p>3 lives and flags that get harder the longer you last, with lookalike flags to trick you.</p></div>
+    <div class="card"><div class="emoji">🏛️</div><h3>Capitals</h3>
+      <p>Name the capital from the flag, or the country from its capital.</p></div>
+    <div class="card"><div class="emoji">📅</div><h3>Daily Quiz</h3>
+      <p>The same 10 questions for everyone each day. Keep your streak going for bonus coins.</p></div>
+    <div class="card"><div class="emoji">📖</div><h3>Flag Atlas</h3>
+      <p>Every flag you get right goes into your Atlas with its capital. Answer it 3 times to master it.</p></div>
+    <div class="card"><div class="emoji">💡</div><h3>Learn from mistakes</h3>
+      <p>After each quiz, see the flags you missed with their names and capitals.</p></div>
+    <div class="card"><div class="emoji">🏆</div><h3>14 trophies, offline</h3>
+      <p>Earn coins and trophies, use 50/50 hints. Plays fully offline.</p></div>
+  </section>
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <img src="img/screen-01.png" alt="Main menu" loading="lazy">
+    <img src="img/screen-02.png" alt="Which country is this flag?" loading="lazy">
+    <img src="img/screen-03.png" alt="Find the flag in Time Rush" loading="lazy">
+    <img src="img/screen-04.png" alt="Capital question" loading="lazy">
+    <img src="img/screen-05.png" alt="World Tour map" loading="lazy">
+    <img src="img/screen-06.png" alt="Flag Atlas" loading="lazy">
+    <img src="img/screen-07.png" alt="Result with mistakes to learn" loading="lazy">
+  </div>
+</main>
+<footer>
+  <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="mailto:tanh.naht@gmail.com">Contact</a></p>
+  <p>Flag images: <a href="https://github.com/lipis/flag-icons">flag-icons</a> (MIT License).</p>
+  <p><a href="../">More games &amp; apps from anhrice</a></p>
+  <p>© 2026 anhrice</p>
+</footer>
+</body>
+</html>
