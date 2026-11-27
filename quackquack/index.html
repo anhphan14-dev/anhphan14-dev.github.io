@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quack Quack – The fleets sail on</title>
+<meta name="description" content="Quack Quack is an offline fleet.io game on a post-apocalyptic sea: command your nation's fleet, collect energy, oxygen, food and water to grow your convoy, complete daily orders and outsmart AI fleets. No internet needed.">
+<meta property="og:title" content="Quack Quack">
+<meta property="og:description" content="The world ended. The fleets sail on.">
+<meta property="og:image" content="https://anhphan14-dev.github.io/quackquack/icon-512.png">
+<link rel="icon" href="icon-512.png">
+<style>
+  :root {
+    --toxic: #9cff3a; --rust: #ff8a3d; --sea: #22343a; --night: #0a1214;
+    --bg: #f2f5f4; --fg: #14201f; --muted: #50625f; --card: #ffffff; --line: #dbe3e1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0b1517; --fg: #eaf2f0; --muted: #9db3ae; --card: #142326; --line: #243a3d; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: #c25a12; }
+  @media (prefers-color-scheme: dark) { a { color: var(--rust); } }
+  .hero { background: linear-gradient(170deg, var(--sea), var(--night)); color: #fff;
+          text-align: center; padding: 64px 16px 72px; }
+  .hero img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 10px 30px rgba(0,0,0,.45); }
+  .hero .kicker { margin: 20px auto 0; color: var(--toxic); font-weight: 900; letter-spacing: .5em; }
+  .hero h1 { font-size: 2.8rem; margin: 0 0 6px; line-height: 1.1; font-weight: 900; letter-spacing: .06em; }
+  .hero .sub { color: var(--rust); font-weight: 900; letter-spacing: .5em; margin: 0 auto 14px; }
+  .hero p { margin: 0 auto; max-width: 560px; opacity: .92; font-size: 1.1rem; }
+  .btn { display: inline-block; margin-top: 28px; padding: 13px 26px; border-radius: 999px;
+         background: var(--rust); color: #2e1300; font-weight: 800; text-decoration: none; }
+  .btn:hover { filter: brightness(1.08); }
+  main { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: -36px 0 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+          padding: 20px; box-shadow: 0 4px 18px rgba(0,0,0,.06); }
+  .card .emoji { font-size: 28px; }
+  .card h3 { margin: 8px 0 4px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+  h2 { text-align: center; margin: 56px 0 20px; }
+  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 4px 16px; scroll-snap-type: x mandatory; }
+  .shots img { height: 460px; width: auto; border-radius: 18px; scroll-snap-align: center;
+               flex: none; box-shadow: 0 6px 22px rgba(0,0,0,.18); }
+  @media (max-width: 480px) { .shots img { height: 380px; } .hero h1 { font-size: 2.3rem; } }
+  .new { display: inline-block; margin: 0 0 16px; padding: 4px 12px; border-radius: 999px;
+         background: rgba(156,255,58,.14); border: 1px solid rgba(156,255,58,.5); color: var(--toxic);
+         font-size: .85rem; font-weight: 800; letter-spacing: .04em; }
+  .whatsnew { max-width: 640px; margin: 0 auto; }
+  .whatsnew h3 { margin: 0 0 8px; }
+  .whatsnew ul { margin: 0; padding-left: 1.2em; color: var(--muted); }
+  .whatsnew li { margin: 4px 0; }
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 48px 16px 40px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="icon-512.png" alt="Quack Quack icon">
+  <p class="kicker">HATCH · LEAD · STEAL</p>
+  <h1>QUACK QUACK</h1>
+  <p class="sub">DUCKLING BATTLE ROYALE</p>
+  <p>Ducklings hatch and follow the first thing they see: a Mama Duck, a kid, a puppy, a bicycle, even a red car. Lead the longest line, bite rival lines to steal their ducklings, and be the last leader standing. Fully offline.</p>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.anhrice.quackquack">Get it on Google Play</a>
+</header>
+<main>
+  <section class="features">
+    <div class="card"><div class="emoji">🥚</div><h3>Hatch and lead</h3>
+      <p>Run over eggs: each duckling imprints on you and joins your line. Golden eggs hatch three at once.</p></div>
+    <div class="card"><div class="emoji">🦆</div><h3>Bite to steal</h3>
+      <p>Touch a rival's line with your head and every duckling behind the bite follows you instead.</p></div>
+    <div class="card"><div class="emoji">🛡️</div><h3>Ducklings are your shield</h3>
+      <p>While you have ducklings you can't be knocked out. Lose them all and any leader can catch you!</p></div>
+    <div class="card"><div class="emoji">🏆</div><h3>Battle royale</h3>
+      <p>The pond dries up step by step. On the mud your ducklings wander off. Last leader standing wins.</p></div>
+    <div class="card"><div class="emoji">🚲</div><h3>9 leaders</h3>
+      <p>Mama Duck, Little Kid, Puppy, Bicycle, Grumpy Goose, Scooter, Red Car, Tractor and Robot Vacuum, each with its own speed, turning and bite.</p></div>
+    <div class="card"><div class="emoji">📱</div><h3>Portrait or landscape</h3>
+      <p>Drag to steer and hold DASH, or turn your phone: left thumb steers, right thumb dashes.</p></div>
+    <div class="card"><div class="emoji">✈️</div><h3>Fully offline</h3>
+      <p>No account and no internet needed. Bread, umbrella and sneakers power-ups keep every match different.</p></div>
+  </section>
+
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <img src="img/screen-01.png" alt="A Mama Duck leading ducklings" loading="lazy">
+    <img src="img/screen-02.png" alt="Main menu" loading="lazy">
+    <img src="img/screen-03.png" alt="No ducklings left: alarm" loading="lazy">
+    <img src="img/screen-04.png" alt="Choosing a leader" loading="lazy">
+    <img src="img/screen-05.png" alt="How to play" loading="lazy">
+  </div>
+</main>
+<footer>
+  <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="mailto:tanh.naht@gmail.com">Contact</a></p>
+  <p><a href="../">More games &amp; apps from anhrice</a></p>
+  <p>© 2026 anhrice</p>
+</footer>
+</body>
+</html>
