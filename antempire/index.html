@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ant Empire Idle: Colony Builder</title>
+<meta name="description" content="Dig tunnels, grow your ant colony and defend it from beetle raids. Worker ants gather food by themselves, even while you are away. Idle game, works offline.">
+<meta property="og:title" content="Ant Empire Idle: Colony Builder">
+<meta property="og:description" content="Dig. Grow. Defend the colony.">
+<meta property="og:image" content="https://anhphan14-dev.github.io/antempire/img/feature-graphic.png"><link rel="icon" href="icon-512.png">
+<style>
+  :root { --gold: #ffc928; --accent: #b85a00; --night: #3a1a05;
+    --bg: #fff8ef; --fg: #2a1608; --muted: #6e5440; --card: #ffffff; --line: #f0dfca; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #140b05; --fg: #fbf1e6; --muted: #c4a98f; --card: #24160c; --line: #3a2616; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: var(--accent); }
+  @media (prefers-color-scheme: dark) { a { color: var(--gold); } }
+  .hero { background: radial-gradient(circle at 50% 28%, #ffd54f, #f57c00 45%, var(--night) 88%); color: #fff; text-align: center; padding: 64px 16px 72px; }
+  .hero img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 0 40px rgba(255,180,60,.7); }
+  .hero h1 { font-size: 2.6rem; margin: 20px 0 6px; line-height: 1.1; font-weight: 900; text-shadow: 0 0 22px rgba(70,25,0,.85); }
+  .hero p { margin: 0 auto; max-width: 560px; font-size: 1.1rem; text-shadow: 0 1px 6px rgba(60,20,0,.7); }
+  .btn { display: inline-block; margin-top: 28px; padding: 13px 26px; border-radius: 999px; background: #2a1608; color: var(--gold); font-weight: 800; text-decoration: none; }
+  main { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: -36px 0 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px; box-shadow: 0 4px 18px rgba(0,0,0,.08); }
+  .card .emoji { font-size: 28px; }
+  .card h3 { margin: 8px 0 4px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+  h2 { text-align: center; margin: 56px 0 20px; }
+  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 4px 16px; scroll-snap-type: x mandatory; }
+  .shots img { height: 460px; width: auto; border-radius: 18px; scroll-snap-align: center; flex: none; box-shadow: 0 6px 22px rgba(0,0,0,.2); }
+  @media (max-width: 480px) { .shots img { height: 380px; } .hero h1 { font-size: 2.2rem; } }
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 48px 16px 40px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="icon-512.png" alt="Ant Empire Idle icon">
+  <h1>Ant Empire Idle: Colony Builder</h1>
+  <p>Dig an underground empire. Your worker ants march out, grab food and carry it home all by themselves, even while you are away.</p>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.anhrice.antempire">Get it on Google Play</a>
+</header>
+<main>
+  <section class="features">
+    <div class="card"><div class="emoji">🐜</div><h3>A living colony</h3>
+      <p>Watch dozens of ants walk the tunnels, carry leaves and berries home and fill up your storage.</p></div>
+    <div class="card"><div class="emoji">🏠</div><h3>5 chambers to dig</h3>
+      <p>Storage, Egg Nursery, Queen Chamber, Fungus Garden and Barracks. Each one grows your empire a different way.</p></div>
+    <div class="card"><div class="emoji">👑</div><h3>The queen</h3>
+      <p>Your queen lays eggs that hatch into new workers. Upgrade her chamber and the nursery to grow faster.</p></div>
+    <div class="card"><div class="emoji">🪲</div><h3>Beetle raids</h3>
+      <p>Horned beetles attack every 2 minutes. Train soldier ants, upgrade their armor and take the beetles' loot.</p></div>
+    <div class="card"><div class="emoji">⏰</div><h3>Idle &amp; offline</h3>
+      <p>Your ants keep working while the game is closed. Come back for your food and a daily gift that grows with your streak.</p></div>
+    <div class="card"><div class="emoji">⚡</div><h3>Boosts</h3>
+      <p>Double your food for 5 minutes or let the queen lay eggs 5x faster. Tap the grass to drop extra crumbs.</p></div>
+  </section>
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <img src="img/screen-01.png" alt="A young ant colony" loading="lazy">
+    <img src="img/screen-02.png" alt="A busy nest with five chambers" loading="lazy">
+    <img src="img/screen-03.png" alt="Soldier ants fighting a beetle raid" loading="lazy">
+  </div>
+</main>
+<footer>
+  <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="mailto:tanh.naht@gmail.com">Contact</a></p>
+  <p><a href="../">More games &amp; apps from anhrice</a></p>
+  <p>© 2026 anhrice</p>
+</footer>
+</body>
+</html>
