@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glyph Fish – ASCII Ocean</title>
+<meta name="description" content="Glyph Fish is an offline 16-bit style eat-or-be-eaten game where every fish is made of text characters. Big fonts eat small fonts. No internet needed.">
+<meta property="og:title" content="Glyph Fish: ASCII Ocean">
+<meta property="og:description" content="Big fonts eat small fonts. ><(((º>">
+<meta property="og:image" content="https://anhphan14-dev.github.io/glyphfish/icon-512.png">
+<link rel="icon" href="icon-512.png">
+<style>
+  :root {
+    --bg: #f4f4f0; --fg: #262626; --muted: #6e7676; --card: #ffffff; --line: #262626;
+    --blue: #1e5bd8; --orange: #e0601a; --green: #1a9e4a; --pink: #e23c9a; --gold: #c99a00;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #151716; --fg: #ecece8; --muted: #a1a8a8; --card: #1f2221; --line: #ecece8; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.6 ui-monospace, "Cascadia Mono", Consolas, "Courier New", monospace; }
+  a { color: var(--blue); }
+  .hero { text-align: center; padding: 56px 16px 64px;
+          background: repeating-linear-gradient(0deg, rgba(0,0,0,.04) 0 1px, transparent 1px 3px); }
+  .hero img { width: 112px; height: 112px; border: 3px solid var(--line); box-shadow: 5px 5px 0 var(--line); image-rendering: pixelated; }
+  .hero h1 { font-size: 3rem; margin: 22px 0 4px; letter-spacing: .08em; line-height: 1.1; }
+  .hero h1 span:nth-child(1) { color: var(--blue); } .hero h1 span:nth-child(2) { color: var(--orange); }
+  .fish { font-size: 1.4rem; margin: 6px 0 14px; white-space: pre; }
+  .hero p { margin: 0 auto; max-width: 580px; }
+  .btn { display: inline-block; margin-top: 26px; padding: 12px 24px; background: #fff4cc; color: #262626;
+         border: 3px solid #262626; box-shadow: 4px 4px 0 #262626; font-weight: 800; text-decoration: none; }
+  .btn:active { transform: translate(3px, 3px); box-shadow: none; }
+  main { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; }
+  .card { background: var(--card); border: 3px solid var(--line); box-shadow: 4px 4px 0 var(--line); padding: 18px; }
+  .card code { font-size: 1.05rem; font-weight: 700; white-space: pre; }
+  .card h3 { margin: 8px 0 4px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .92rem; }
+  h2 { text-align: center; margin: 56px 0 20px; letter-spacing: .1em; }
+  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 8px 18px; scroll-snap-type: x mandatory; }
+  .shots img { height: 460px; width: auto; border: 3px solid var(--line); scroll-snap-align: center; flex: none; }
+  @media (max-width: 480px) { .shots img { height: 380px; } .hero h1 { font-size: 2.3rem; } .fish { font-size: 1.1rem; } }
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 48px 16px 40px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="icon-512.png" alt="Glyph Fish icon">
+  <h1><span>GLYPH</span> <span>FISH</span></h1>
+  <div class="fish"><span style="color:var(--green)">&gt;&lt;&gt;</span>  <span style="color:var(--orange)">&gt;&lt;(((º&gt;</span>  <span style="color:#8e3cc9">彡(((°&gt;</span></div>
+  <p>A 16-bit ocean where every fish is written in text. Each fish has a font size, and the bigger font eats the smaller one. Swim, grow, evolve from a tiny <code>&gt;&lt;&gt;</code> into a giant Leviathan, and never touch a red number. Fully offline.</p>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.anhrice.glyphfish">Get it on Google Play</a>
+</header>
+<main>
+  <section class="features">
+    <div class="card"><code style="color:var(--blue)">12 &gt; 8</code><h3>Big fonts eat small fonts</h3>
+      <p>Every fish shows its size in points. Bigger number? Eat it. A red number means it can eat you: run!</p></div>
+    <div class="card"><code style="color:var(--orange)">&gt;&lt;(((º&gt;</code><h3>Letters that swim</h3>
+      <p>Fish bodies are strings of characters that bend and wiggle smoothly as they swim and turn.</p></div>
+    <div class="card"><code style="color:var(--green)">&gt;&lt;&gt; → ≈≈≈</code><h3>Evolve through 11 forms</h3>
+      <p>Minnow, Guppy, Tetra, Perch, Carp, Bass, Pike, Tuna, Swordfish, Shark and the Leviathan. The longer the string, the bigger the fish.</p></div>
+    <div class="card"><code style="color:#0f9aa6">°oO &lt;°)))&gt;&lt;</code><h3>9 personalities</h3>
+      <p>Bubblers blow °oO, chubby fish are extra filling, sleepy ones snore zZz, grumpy ones chase you, curious ones follow you, shy ones panic &gt;_&lt;, and lovey pairs turn mad if you eat a partner.</p></div>
+    <div class="card"><code style="color:#8f8473">&gt;++('&gt;</code><h3>Fish bones</h3>
+      <p>Bite something almost your size and you can't finish it: its skeleton sinks to the sea bed.</p></div>
+    <div class="card"><code style="color:var(--gold)">★  J</code><h3>Frenzy stars and hooks</h3>
+      <p>Grab a star to eat bigger fish for a few seconds. Fishing hooks drop from the surface: grow to 45pt to snap the line.</p></div>
+    <div class="card"><code>1:30</code><h3>Two modes</h3>
+      <p>Classic: grow as big as you can. Time Attack: how big can you get in 90 seconds?</p></div>
+    <div class="card"><code style="color:var(--pink)">BOLD ITALIC</code><h3>Fish styles</h3>
+      <p>Pick your colour and typeface: Regular, Bold, Italic, Outline, Inverted or Glitch.</p></div>
+    <div class="card"><code>DASH</code><h3>Simple controls</h3>
+      <p>Drag anywhere to swim, hold DASH to sprint. Portrait or landscape. No account, no internet needed.</p></div>
+  </section>
+
+  <h2>SCREENSHOTS</h2>
+  <div class="shots">
+    <img src="img/screen-01.png" alt="Swimming as a Perch among smaller fish" loading="lazy">
+    <img src="img/screen-02.png" alt="A big Bass with fish bones sinking around" loading="lazy">
+    <img src="img/screen-03.png" alt="Main menu" loading="lazy">
+    <img src="img/screen-04.png" alt="Eaten by a grumpy fish" loading="lazy">
+    <img src="img/screen-05.png" alt="How to swim" loading="lazy">
+    <img src="img/screen-06.png" alt="Fish styles and colours" loading="lazy">
+    <img src="img/screen-07.png" alt="Fishdex: forms and personalities" loading="lazy">
+    <img src="img/screen-08.png" alt="Time Attack in landscape" loading="lazy">
+  </div>
+</main>
+<footer>
+  <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="mailto:tanh.naht@gmail.com">Contact</a></p>
+  <p><a href="../">More games &amp; apps from anhrice</a></p>
+  <p>© 2026 anhrice</p>
+</footer>
+</body>
+</html>
